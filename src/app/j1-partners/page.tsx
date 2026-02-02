@@ -31,7 +31,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Built for Growing Agencies',
-    description: 'Whether you\'re placing 3 students or 10, our Small Clients Division is designed specifically for agencies like yours.',
+    description: 'Whether you\'re placing 3 students or 30, our Small Clients Division is designed specifically for agencies like yours.',
   },
   {
     icon: Headphones,
@@ -72,7 +72,7 @@ const timeline = [
 const faqs = [
   {
     q: 'What is the minimum number of students required?',
-    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 10 students per year. You can start with as few as 1 students and grow from there.',
+    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 50+ students per year. You can start with as few as 3 students and grow from there.',
   },
   {
     q: 'How do I get a visa allocation (quota)?',
@@ -161,11 +161,11 @@ export default function J1PartnersPage() {
               <div className="flex flex-wrap gap-6 text-white/60 text-sm">
                 <div className="flex items-center gap-2">
                   <Shield className="w-5 h-5 text-emerald-400" />
-                  Official Partner of DOS Designated Sponsor
+                  DOS Designated Sponsor
                 </div>
                 <div className="flex items-center gap-2">
                   <Award className="w-5 h-5 text-emerald-400" />
-                  Official Designated Sponsor who is CSIET Listed 
+                  CSIET Listed
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-emerald-400" />
