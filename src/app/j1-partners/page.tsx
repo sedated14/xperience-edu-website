@@ -28,7 +28,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Built for Growing Agencies',
-    description: 'Whether you\'re placing 3 students or 30, our Small Clients Division is designed specifically for agencies like yours.',
+    description: 'Whether you\'re placing 1 student or 10, our Small Clients Division is designed specifically for agencies like yours.',
   },
   {
     icon: Headphones,
@@ -62,7 +62,7 @@ const timeline = [
 const faqs = [
   {
     q: 'What is the minimum number of students required?',
-    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 50+ students per year. You can start with as few as 3 students and grow from there.',
+    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 10 students per year. You can start with as few as 3 students and grow from there.',
   },
   {
     q: 'How do I get a visa allocation (quota)?',
@@ -105,7 +105,7 @@ export default function J1PartnersPage() {
         <div className="container-wide py-4 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-xl font-bold font-display text-primary-900">
-              Xperience<span className="text-secondary-500">Edu</span>
+              Xperience<span className="text-secondary-500">Education</span>
             </span>
           </Link>
           <a href="#apply" className="btn-secondary text-sm">
