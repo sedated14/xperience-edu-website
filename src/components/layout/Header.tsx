@@ -55,11 +55,7 @@ export function Header() {
       <div className="container-wide flex items-center justify-between">
         {/* Logo — Uses your actual logo image */}
         <Link href="/" className="flex items-center gap-3 group">
-          {/* 
-            YOUR LOGO: Place Xperience_logo_updated.png in public/images/
-            Then uncomment the img tag and remove the text fallback
-          */}
-          {/* <img src="/images/logo.png" alt="Xperience Education" className="h-10 w-10 rounded-full" /> */}
+          <img src="/images/logo.png" alt="Xperience Education" className="h-10 w-10 rounded-full" />
           <span className={cn(
             'text-xl font-bold font-display transition-colors',
             isScrolled ? 'text-primary-900' : 'text-white'

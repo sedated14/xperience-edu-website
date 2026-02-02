@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Link from 'next/link'
 import { 
   ArrowRight, 
   CheckCircle2, 
@@ -28,7 +27,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Built for Growing Agencies',
-    description: 'Whether you\'re placing 1 student or 10, our Small Clients Division is designed specifically for agencies like yours.',
+    description: 'Whether you\'re placing 3 students or 30, our Small Clients Division is designed specifically for agencies like yours.',
   },
   {
     icon: Headphones,
@@ -62,7 +61,7 @@ const timeline = [
 const faqs = [
   {
     q: 'What is the minimum number of students required?',
-    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 10 students per year. You can start with as few as 3 students and grow from there.',
+    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 50+ students per year. You can start with as few as 3 students and grow from there.',
   },
   {
     q: 'How do I get a visa allocation (quota)?',
@@ -103,11 +102,11 @@ export default function J1PartnersPage() {
       {/* Minimal Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-lg border-b border-neutral-100">
         <div className="container-wide py-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <span className="text-xl font-bold font-display text-primary-900">
-              Xperience<span className="text-secondary-500">Education</span>
+              Xperience<span className="text-secondary-500"> Education</span>
             </span>
-          </Link>
+          </div>
           <a href="#apply" className="btn-secondary text-sm">
             Apply to Partner <ArrowRight className="w-4 h-4" />
           </a>
@@ -447,10 +446,7 @@ export default function J1PartnersPage() {
 
       {/* FOOTER */}
       <footer className="bg-primary-950 border-t border-white/10 py-8">
-        <div className="container-wide flex flex-col sm:flex-row justify-between items-center gap-4">
-          <Link href="/" className="text-white/60 hover:text-white transition-colors text-sm">
-            ← Back to XperienceEdu.com
-          </Link>
+        <div className="container-wide text-center">
           <p className="text-white/40 text-sm">
             © {new Date().getFullYear()} Xperience Education LLC. All rights reserved.
           </p>
