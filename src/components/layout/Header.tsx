@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 
 const navigation = [
   {
-    name: 'Programs',
+    name: 'Students',
     href: '/students',
     children: [
       { name: 'F1 Visa Programs', href: '/students/f1-visa', description: 'Private & boarding school options' },
@@ -59,7 +59,7 @@ export function Header() {
             YOUR LOGO: Place Xperience_logo_updated.png in public/images/
             Then uncomment the img tag and remove the text fallback
           */}
-           <img src="/images/logo.png" alt="Xperience Education" className="h-12 w-12 rounded-full" /> 
+          {/* <img src="/images/logo.png" alt="Xperience Education" className="h-10 w-10 rounded-full" /> */}
           <span className={cn(
             'text-xl font-bold font-display transition-colors',
             isScrolled ? 'text-primary-900' : 'text-white'
