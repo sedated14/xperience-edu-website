@@ -13,11 +13,8 @@ import {
   Headphones,
   TrendingUp,
   Calendar,
-  DollarSign,
   GraduationCap,
-  Clock,
   Mail,
-  Phone,
   ChevronDown,
   ChevronUp
 } from 'lucide-react'
@@ -53,13 +50,6 @@ const benefits = [
     title: 'Scale at Your Pace',
     description: 'Start small and grow your quota as you build experience. No pressure, no minimums to start.',
   },
-]
-
-const programFees = [
-  { program: 'Academic Year', fee: '$10,000 USD', duration: 'Full school year (Aug–May)' },
-  { program: 'Fall Semester', fee: '$9,500 USD', duration: 'Aug–Dec' },
-  { program: 'Spring Semester', fee: '$9,500 USD', duration: 'Jan–May' },
-  { program: 'Calendar Year', fee: '$10,000 USD', duration: 'Spring start (limited)' },
 ]
 
 const timeline = [
@@ -161,11 +151,7 @@ export default function J1PartnersPage() {
               <div className="flex flex-wrap gap-6 text-white/60 text-sm">
                 <div className="flex items-center gap-2">
                   <Shield className="w-5 h-5 text-emerald-400" />
-                  DOS Designated Sponsor
-                </div>
-                <div className="flex items-center gap-2">
-                  <Award className="w-5 h-5 text-emerald-400" />
-                  CSIET Listed
+                  Official Partner of a DOS Designated & CSIET Listed Sponsor
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-emerald-400" />
@@ -238,36 +224,6 @@ export default function J1PartnersPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* PROGRAM FEES */}
-      <section className="section bg-neutral-50">
-        <div className="container-wide">
-          <div className="text-center mb-12">
-            <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Transparent Pricing</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">Program Fees</h2>
-            <p className="text-neutral-600 mt-4">All fees include insurance. No hidden costs.</p>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-3xl shadow-soft overflow-hidden">
-              <div className="grid grid-cols-3 gap-4 p-4 bg-neutral-100 font-semibold text-sm text-neutral-700">
-                <div>Program</div>
-                <div>Fee</div>
-                <div>Duration</div>
-              </div>
-              {programFees.map((item) => (
-                <div key={item.program} className="grid grid-cols-3 gap-4 p-4 border-t border-neutral-100">
-                  <div className="font-medium text-neutral-900">{item.program}</div>
-                  <div className="text-emerald-600 font-semibold">{item.fee}</div>
-                  <div className="text-neutral-600 text-sm">{item.duration}</div>
-                </div>
-              ))}
-            </div>
-            <p className="text-center text-neutral-500 text-sm mt-4">
-              Application deposit of $2,000 USD included in program fees. Additional fees may apply for optional services.
-            </p>
           </div>
         </div>
       </section>
