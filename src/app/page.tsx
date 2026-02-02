@@ -76,13 +76,11 @@ export default function HomePage() {
               <div className="relative aspect-square max-w-lg mx-auto">
                 {/* REPLACE: Add your hero image to public/images/hero-students.jpg */}
                 <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl">
-                  <div className="w-full h-full bg-gradient-to-br from-primary-800 to-secondary-900 flex items-center justify-center">
-                    <div className="text-white/80 text-center p-8">
-                      <GraduationCap className="w-24 h-24 mx-auto mb-4" />
-                      <p className="text-lg font-medium">Add hero image</p>
-                      <p className="text-sm text-white/60">public/images/hero-students.jpg</p>
-                    </div>
-                  </div>
+                  <img
+                    src="/images/hero-students.jpg"
+                    alt="International students on an American campus"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-4 shadow-elevated animate-fade-up animation-delay-800">
                   <div className="flex items-center gap-3">
