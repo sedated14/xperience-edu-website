@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
-import { Header } from '@/components/layout/Header'
-import { Footer } from '@/components/layout/Footer'
+import { LayoutWrapper } from '@/components/layout/LayoutWrapper'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -96,9 +95,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#1e40af" />
       </head>
       <body className="font-sans min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
   )
