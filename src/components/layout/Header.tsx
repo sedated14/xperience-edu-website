@@ -59,7 +59,7 @@ export function Header() {
             YOUR LOGO: Place Xperience_logo_updated.png in public/images/
             Then uncomment the img tag and remove the text fallback
           */}
-           <img src="/images/logo.png" alt="Xperience Education" className="h-13 w-13 rounded-full" /> 
+           <img src="/images/logo.png" alt="Xperience Education" className="h-12 w-12 rounded-full" /> 
           <span className={cn(
             'text-xl font-bold font-display transition-colors',
             isScrolled ? 'text-primary-900' : 'text-white'
