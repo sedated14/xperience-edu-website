@@ -7,7 +7,6 @@ import {
   Globe, 
   Users, 
   Shield, 
-  Award,
   FileCheck,
   Headphones,
   TrendingUp,
@@ -113,48 +112,85 @@ export default function J1PartnersPage() {
         </div>
       </header>
 
-      {/* HERO */}
+      {/* HERO WITH IMAGE */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0 bg-dots-pattern" /></div>
         <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl floating" />
         <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-secondary-500/10 rounded-full blur-3xl floating-delayed" />
         
         <div className="container-wide relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full text-emerald-300 text-sm mb-6">
-              <Globe className="w-4 h-4" />
-              Fall 2026 & Spring 2027 Now Open
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display leading-tight">
-              Access J1 Visa Allocations
-              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-secondary-400">
-                For Your Students
-              </span>
-            </h1>
-            <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
-              Partner with Xperience Education to place your students in American high schools. 
-              We provide visa sponsorship, host family placement, and full program support — 
-              designed specifically for new, small, and growing agencies.
-            </p>
-            <div className="flex flex-wrap gap-4 mt-8">
-              <a href="#apply" className="btn bg-emerald-600 text-white hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">
-                Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a href="#how-it-works" className="btn-ghost btn-lg">
-                How It Works
-              </a>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full text-emerald-300 text-sm mb-6">
+                <Globe className="w-4 h-4" />
+                Fall 2026 & Spring 2027 Now Open
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display leading-tight">
+                Access J1 Visa Allocations
+                <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-secondary-400">
+                  For Your Students
+                </span>
+              </h1>
+              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
+                Partner with Xperience Education to place your students in American high schools. 
+                We provide visa sponsorship, host family placement, and full program support — 
+                designed specifically for new, small, and growing agencies.
+              </p>
+              <div className="flex flex-wrap gap-4 mt-8">
+                <a href="#apply" className="btn bg-emerald-600 text-white hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">
+                  Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
+                <a href="#how-it-works" className="btn-ghost btn-lg">
+                  How It Works
+                </a>
+              </div>
+              
+              {/* Trust Badges */}
+              <div className="mt-12 pt-8 border-t border-white/10">
+                <div className="flex flex-wrap gap-6 text-white/60 text-sm">
+                  <div className="flex items-center gap-2">
+                    <Shield className="w-5 h-5 text-emerald-400" />
+                    Official Partner of a DOS Designated & CSIET Listed Sponsor
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Users className="w-5 h-5 text-emerald-400" />
+                    15+ Years Experience
+                  </div>
+                </div>
+              </div>
             </div>
             
-            {/* Trust Badges */}
-            <div className="mt-12 pt-8 border-t border-white/10">
-              <div className="flex flex-wrap gap-6 text-white/60 text-sm">
-                <div className="flex items-center gap-2">
-                  <Shield className="w-5 h-5 text-emerald-400" />
-                  Official Partner of a DOS Designated & CSIET Listed Sponsor
+            {/* Hero Image */}
+            <div className="hidden lg:block relative">
+              <div className="relative">
+                <img 
+                  src="/images/Students.png" 
+                  alt="International students in America"
+                  className="rounded-3xl shadow-2xl w-full object-cover"
+                />
+                {/* Floating stat card */}
+                <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-elevated">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
+                      <GraduationCap className="w-6 h-6 text-emerald-600" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-neutral-900">5,000+</div>
+                      <div className="text-sm text-neutral-500">Students Placed</div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Users className="w-5 h-5 text-emerald-400" />
-                  15+ Years Experience
+                {/* Floating stat card 2 */}
+                <div className="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-elevated">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center">
+                      <Globe className="w-6 h-6 text-secondary-600" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-neutral-900">50+</div>
+                      <div className="text-sm text-neutral-500">Partner Countries</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -162,21 +198,44 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* PROBLEM / SOLUTION */}
+      {/* PROBLEM / SOLUTION WITH IMAGE */}
       <section className="section bg-neutral-50">
         <div className="container-wide">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">The Challenge</span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">
-              Getting J1 Visa Access Shouldn&apos;t Be This Hard
-            </h2>
-            <p className="text-lg text-neutral-600 mt-4">
-              Large sponsors often overlook smaller agencies. Quota minimums are too high. 
-              Support is limited. You&apos;re left navigating complex U.S. regulations alone.
-            </p>
-            <p className="text-lg text-neutral-900 font-medium mt-6">
-              That&apos;s exactly why we created our Small Clients Division.
-            </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <img 
+                src="/images/heart flags.png" 
+                alt="Cultural exchange and diversity"
+                className="rounded-3xl shadow-soft w-full object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">The Challenge</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">
+                Getting J1 Visa Access Shouldn&apos;t Be This Hard
+              </h2>
+              <p className="text-lg text-neutral-600 mt-4">
+                Large sponsors often overlook smaller agencies. Quota minimums are too high. 
+                Support is limited. You&apos;re left navigating complex U.S. regulations alone.
+              </p>
+              <p className="text-lg text-neutral-900 font-medium mt-6">
+                That&apos;s exactly why we created our Small Clients Division.
+              </p>
+              <div className="mt-6 space-y-3">
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                  <span className="text-neutral-700">No minimum quota requirements</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                  <span className="text-neutral-700">Dedicated support for every partner</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0" />
+                  <span className="text-neutral-700">Compliance guidance included</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -202,26 +261,33 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* HOW IT WORKS WITH IMAGE */}
       <section id="how-it-works" className="section bg-primary-950 text-white">
         <div className="container-wide">
-          <div className="text-center mb-12">
-            <span className="inline-block px-4 py-1.5 bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-medium mb-4">Simple Process</span>
-            <h2 className="text-3xl sm:text-4xl font-bold font-display">How It <span className="text-emerald-400">Works</span></h2>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <div className="space-y-6">
-              {timeline.map((item, index) => (
-                <div key={item.step} className="flex gap-6 items-start">
-                  <div className="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center font-bold text-lg flex-shrink-0">
-                    {item.step}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="inline-block px-4 py-1.5 bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-medium mb-4">Simple Process</span>
+              <h2 className="text-3xl sm:text-4xl font-bold font-display">How It <span className="text-emerald-400">Works</span></h2>
+              <div className="mt-8 space-y-6">
+                {timeline.map((item) => (
+                  <div key={item.step} className="flex gap-6 items-start">
+                    <div className="w-14 h-14 bg-emerald-600 text-white rounded-2xl flex items-center justify-center font-bold text-lg flex-shrink-0">
+                      {item.step}
+                    </div>
+                    <div className="pt-2">
+                      <h3 className="text-xl font-bold">{item.title}</h3>
+                      <p className="text-neutral-400 mt-1">{item.description}</p>
+                    </div>
                   </div>
-                  <div className="pt-2">
-                    <h3 className="text-xl font-bold">{item.title}</h3>
-                    <p className="text-neutral-400 mt-1">{item.description}</p>
-                  </div>
-                </div>
-              ))}
+                ))}
+              </div>
+            </div>
+            <div className="hidden lg:block">
+              <img 
+                src="/images/High School Building 1.png" 
+                alt="American high school campus"
+                className="rounded-3xl shadow-2xl w-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -231,6 +297,10 @@ export default function J1PartnersPage() {
       <section className="section bg-white">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Important Dates</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">Key Deadlines</h2>
+            </div>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-secondary-50 rounded-3xl p-8 border-2 border-secondary-100">
                 <div className="flex items-center gap-3 mb-4">
@@ -309,7 +379,7 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* APPLICATION FORM */}
+      {/* APPLICATION FORM WITH IMAGE */}
       <section id="apply" className="section bg-primary-950 text-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -338,6 +408,16 @@ export default function J1PartnersPage() {
                   <CheckCircle2 className="w-5 h-5 text-emerald-400 flex-shrink-0" />
                   <span className="text-neutral-300">Response within 24 hours</span>
                 </div>
+              </div>
+
+              {/* Image below the checklist */}
+              <div className="mt-8 hidden lg:block">
+                <img 
+                  src="/images/modern home.png" 
+                  alt="American host family home"
+                  className="rounded-2xl shadow-lg w-full object-cover max-h-64"
+                />
+                <p className="text-neutral-500 text-sm mt-3 text-center">Students are placed with welcoming American host families</p>
               </div>
 
               <div className="mt-8 pt-8 border-t border-white/10">
