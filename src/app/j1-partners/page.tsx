@@ -26,7 +26,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Built for Growing Agencies',
-    description: 'Whether you\'re placing 3 students or 30, our Small Clients Division is designed specifically for agencies like yours.',
+    description: 'Whether you\'re placing 1 student or 10, our Small Clients Division is designed specifically for agencies like yours.',
   },
   {
     icon: Headphones,
@@ -60,7 +60,7 @@ const timeline = [
 const faqs = [
   {
     q: 'What is the minimum number of students required?',
-    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 50+ students per year. You can start with as few as 3 students and grow from there.',
+    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 10 students per year. You can start with as few as 3 students and grow from there.',
   },
   {
     q: 'How do I get a visa allocation (quota)?',
