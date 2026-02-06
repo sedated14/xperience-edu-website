@@ -189,7 +189,7 @@ export default function F1VisaPage() {
       <section className="section animated-gradient">
         <div className="container-wide text-center text-white">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Start Your F1 Visa Application</h2>
-          <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Join thousands of students who&apos;ve earned their US diploma through Xperience Education.</p>
+          <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Take the first step toward earning your US diploma. Our experienced team is here to guide you through every step of the process.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
             <Link href="/about/contact" className="btn-ghost btn-lg">Talk to an Advisor</Link>

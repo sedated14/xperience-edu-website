@@ -17,11 +17,11 @@ export default function AboutPage() {
               About Xperience Education
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
-              15+ Years of
+              A Team Dedicated to
               <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Changing Lives</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
-              At Xperience Education, we are dedicated to fostering global education opportunities for international students.
+              Since 2009, we&apos;ve connected thousands of international students with life-changing American education experiences.
             </p>
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
             <div>
               <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Our Story</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">Built on a Passion for Education</h2>
-              <p className="text-lg text-neutral-600 mt-4">As a leading international education organization, we offer a range of programs, including F1 High School Programs, J1 High School Programs, Short-Term Exchanges, and Summer Programs designed to provide students with enriching academic and cultural experiences.</p>
+              <p className="text-lg text-neutral-600 mt-4">At Xperience Education, we are dedicated to fostering global education opportunities for international students. As a leading international education organization, we offer a range of programs, including F1 High School Programs, J1 High School Programs, Short-Term Exchanges, and Summer Programs designed to provide students with enriching academic and cultural experiences.</p>
               <p className="text-neutral-600 mt-4">With over 15 years of collective experience in the international education industry, our team is committed to ensuring a smooth and successful journey for students. We work directly with students as well as sending organizations and independent recruitment representatives to facilitate seamless placement and support.</p>
             </div>
             <div>
@@ -81,19 +81,19 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl sm:text-5xl font-bold text-secondary-400">15+</div>
-              <div className="text-neutral-400 mt-2">Years Operating</div>
+              <div className="text-neutral-400 mt-2">Years Combined Team Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-bold text-accent-400">5,000+</div>
-              <div className="text-neutral-400 mt-2">Students Placed</div>
+              <div className="text-4xl sm:text-5xl font-bold text-accent-400">100K+</div>
+              <div className="text-neutral-400 mt-2">Int&apos;l Students in US Yearly</div>
             </div>
             <div className="text-center">
               <div className="text-4xl sm:text-5xl font-bold text-secondary-400">200+</div>
               <div className="text-neutral-400 mt-2">Partner Schools</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl sm:text-5xl font-bold text-accent-400">50+</div>
-              <div className="text-neutral-400 mt-2">Countries</div>
+              <div className="text-4xl sm:text-5xl font-bold text-accent-400">Proven</div>
+              <div className="text-neutral-400 mt-2">Sponsor Networks</div>
             </div>
           </div>
         </div>

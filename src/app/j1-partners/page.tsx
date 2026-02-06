@@ -158,7 +158,7 @@ export default function J1PartnersPage() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5 text-emerald-400" />
-                  15+ Years Experience
+                  15+ Years Combined Team Experience
                 </div>
               </div>
             </div>

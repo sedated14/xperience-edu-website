@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { 
   ArrowRight, 
@@ -13,61 +13,9 @@ import {
   Users,
   Award,
   CheckCircle2,
-  Play
+  Play,
+  Shield
 } from 'lucide-react'
-
-// Animated counter hook
-function useCountUp(end: number, duration: number = 2000, startOnView: boolean = true) {
-  const [count, setCount] = useState(0)
-  const [hasStarted, setHasStarted] = useState(false)
-  const ref = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    if (!startOnView) {
-      setHasStarted(true)
-    }
-  }, [startOnView])
-
-  useEffect(() => {
-    if (startOnView && ref.current) {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting && !hasStarted) {
-            setHasStarted(true)
-          }
-        },
-        { threshold: 0.5 }
-      )
-      observer.observe(ref.current)
-      return () => observer.disconnect()
-    }
-  }, [startOnView, hasStarted])
-
-  useEffect(() => {
-    if (!hasStarted) return
-
-    let startTime: number
-    let animationFrame: number
-
-    const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp
-      const progress = Math.min((timestamp - startTime) / duration, 1)
-      
-      // Easing function for smooth animation
-      const easeOutQuart = 1 - Math.pow(1 - progress, 4)
-      setCount(Math.floor(easeOutQuart * end))
-
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate)
-      }
-    }
-
-    animationFrame = requestAnimationFrame(animate)
-    return () => cancelAnimationFrame(animationFrame)
-  }, [end, duration, hasStarted])
-
-  return { count, ref }
-}
 
 // Rotating text component
 function RotatingText({ words, className }: { words: string[], className?: string }) {
@@ -99,35 +47,6 @@ function RotatingText({ words, className }: { words: string[], className?: strin
         {words[currentIndex]}
       </span>
     </span>
-  )
-}
-
-// Animated stat component
-function AnimatedStat({ value, suffix = '', label }: { value: number, suffix?: string, label: string }) {
-  const { count, ref } = useCountUp(value, 2000)
-  
-  return (
-    <div className="text-center" ref={ref}>
-      <div className="text-2xl font-bold text-white">
-        {count}{suffix}
-      </div>
-      <div className="text-sm text-white/60">{label}</div>
-    </div>
-  )
-}
-
-// Animated stat card for stats section
-function AnimatedStatCard({ value, suffix = '', label, icon: Icon }: { value: number, suffix?: string, label: string, icon: React.ElementType }) {
-  const { count, ref } = useCountUp(value, 2000)
-  
-  return (
-    <div className="text-center group" ref={ref}>
-      <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors">
-        <Icon className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" />
-      </div>
-      <div className="stat-number text-primary-900">{count.toLocaleString()}{suffix}</div>
-      <div className="text-neutral-600 mt-2">{label}</div>
-    </div>
   )
 }
 
@@ -172,11 +91,20 @@ export default function HomePage() {
                 </Link>
               </div>
               <div className="mt-12 pt-8 border-t border-white/10 animate-fade-up animation-delay-600">
-                <p className="text-white/60 text-sm mb-4">Trusted by families worldwide</p>
+                <p className="text-white/60 text-sm mb-4">Part of a Growing Global Network</p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-6">
-                  <AnimatedStat value={15} suffix="+" label="Years Experience" />
-                  <AnimatedStat value={50} suffix="+" label="Countries Served" />
-                  <AnimatedStat value={200} suffix="+" label="Partner Schools" />
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-white">100K+</div>
+                    <div className="text-sm text-white/60">Int&apos;l Students in US Yearly</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-white">15+</div>
+                    <div className="text-sm text-white/60">Years Team Experience</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-white">200+</div>
+                    <div className="text-sm text-white/60">Partner Schools</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -196,19 +124,19 @@ export default function HomePage() {
                       <Users className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-bold text-neutral-900">5,000+</div>
-                      <div className="text-sm text-neutral-600">Students Placed</div>
+                      <div className="font-bold text-neutral-900">100K+</div>
+                      <div className="text-sm text-neutral-600">Students in US Yearly</div>
                     </div>
                   </div>
                 </div>
                 <div className="absolute -top-6 -right-6 glass rounded-2xl p-4 shadow-elevated animate-fade-up animation-delay-1000">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 bg-accent-500 rounded-xl flex items-center justify-center">
-                      <Globe className="w-6 h-6 text-white" />
+                      <Award className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-bold text-neutral-900">50+</div>
-                      <div className="text-sm text-neutral-600">Countries</div>
+                      <div className="font-bold text-neutral-900">Proven</div>
+                      <div className="text-sm text-neutral-600">Partner Networks</div>
                     </div>
                   </div>
                 </div>
@@ -286,14 +214,42 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* STATS — Blue accent numbers */}
+      {/* WHY US — Industry credibility */}
       <section className="section bg-white">
         <div className="container-wide">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
-            <AnimatedStatCard value={15} suffix="+" label="Years of Experience" icon={Award} />
-            <AnimatedStatCard value={5000} suffix="+" label="Students Placed" icon={GraduationCap} />
-            <AnimatedStatCard value={200} suffix="+" label="Partner Schools" icon={Building2} />
-            <AnimatedStatCard value={50} suffix="+" label="Countries Served" icon={Globe} />
+          <div className="text-center mb-12">
+            <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Our Advantage</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">Backed by Experience & Trusted Networks</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center group bg-neutral-50 rounded-2xl p-6 hover:bg-secondary-50 transition-colors">
+              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors">
+                <Award className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="font-bold text-neutral-900">15+ Years Combined</h3>
+              <p className="text-neutral-600 text-sm mt-2">Team Experience in F-1 & J-1 Student Placement</p>
+            </div>
+            <div className="text-center group bg-neutral-50 rounded-2xl p-6 hover:bg-secondary-50 transition-colors">
+              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors">
+                <Users className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="font-bold text-neutral-900">100,000+ Students</h3>
+              <p className="text-neutral-600 text-sm mt-2">International High School Students in the U.S. Each Year</p>
+            </div>
+            <div className="text-center group bg-neutral-50 rounded-2xl p-6 hover:bg-secondary-50 transition-colors">
+              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors">
+                <Shield className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="font-bold text-neutral-900">Proven Sponsors</h3>
+              <p className="text-neutral-600 text-sm mt-2">Working with Networks Serving Thousands Annually</p>
+            </div>
+            <div className="text-center group bg-neutral-50 rounded-2xl p-6 hover:bg-secondary-50 transition-colors">
+              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors">
+                <Building2 className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" />
+              </div>
+              <h3 className="font-bold text-neutral-900">200+ Schools</h3>
+              <p className="text-neutral-600 text-sm mt-2">Partner School Network Across the United States</p>
+            </div>
           </div>
         </div>
       </section>
@@ -305,12 +261,12 @@ export default function HomePage() {
             <div>
               <span className="inline-block px-4 py-1.5 bg-secondary-500/20 text-secondary-400 rounded-full text-sm font-medium mb-4">Why Choose Us</span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display">Excellence in International <span className="text-secondary-400">Education</span></h2>
-              <p className="text-lg text-neutral-400 mt-4">With over 15 years of collective experience, we&apos;ve helped thousands of students achieve their dreams of studying in America.</p>
+              <p className="text-lg text-neutral-400 mt-4">Our seasoned team brings deep roots in F-1 and J-1 student placement. We work with proven sponsors and networks to help students achieve their dreams of studying in America.</p>
               <div className="grid sm:grid-cols-2 gap-4 mt-8">
                 <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Personalized school matching</span></div>
                 <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Comprehensive visa support</span></div>
                 <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Dedicated program coordinators</span></div>
-                <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">24/7 emergency assistance</span></div>
+                <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Local area support</span></div>
                 <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Pre-departure orientation</span></div>
                 <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Ongoing academic monitoring</span></div>
               </div>

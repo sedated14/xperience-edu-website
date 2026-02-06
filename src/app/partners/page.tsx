@@ -87,7 +87,7 @@ export default function PartnersPage() {
       <section className="section animated-gradient">
         <div className="container-wide text-center text-white">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Ready to Join Our Network?</h2>
-          <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">We partner with agencies in 50+ countries. Let&apos;s discuss how we can grow together.</p>
+          <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">We work with agencies worldwide through our proven sponsor networks. Let&apos;s discuss how we can grow together.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
             <Link href="/about/contact" className="btn-ghost btn-lg">Schedule a Call</Link>

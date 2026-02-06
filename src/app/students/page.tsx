@@ -151,7 +151,7 @@ export default function StudentsPage() {
           <div className="text-center">
             <span className="inline-block px-4 py-1.5 bg-secondary-500/20 text-secondary-400 rounded-full text-sm font-medium mb-4">Why Xperience</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display">Trusted by Families, Students, Schools and <span className="text-secondary-400">Agencies Worldwide</span></h2>
-            <p className="text-lg text-neutral-400 mt-6 max-w-2xl mx-auto">With over 15 years of collective experience, we&apos;ve built a reputation for excellence in international student placement. Our dedicated team ensures every student has a safe, successful, and transformative experience.</p>
+            <p className="text-lg text-neutral-400 mt-6 max-w-2xl mx-auto">With a combined 15+ years of team experience in international education, we&apos;re committed to helping every student have a safe, successful, and transformative experience in America.</p>
           </div>
         </div>
       </section>
