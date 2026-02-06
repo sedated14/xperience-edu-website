@@ -8,7 +8,6 @@ import {
   Building2, 
   Share2, 
   Briefcase,
-  Star,
   Globe,
   Users,
   Award,
@@ -58,16 +57,16 @@ export default function HomePage() {
                 <p className="text-white/60 text-sm mb-4">Trusted by families worldwide</p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-6">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">4.9/5</div>
-                    <div className="text-sm text-white/60">Rating</div>
+                    <div className="text-2xl font-bold text-white">15+</div>
+                    <div className="text-sm text-white/60">Years Experience</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">500+</div>
-                    <div className="text-sm text-white/60">Reviews</div>
+                    <div className="text-2xl font-bold text-white">50+</div>
+                    <div className="text-sm text-white/60">Countries Served</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-white">98%</div>
-                    <div className="text-sm text-white/60">Success Rate</div>
+                    <div className="text-2xl font-bold text-white">200+</div>
+                    <div className="text-sm text-white/60">Partner Schools</div>
                   </div>
                 </div>
               </div>
@@ -231,42 +230,6 @@ export default function HomePage() {
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary-500/20 rounded-full blur-2xl" />
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent-500/20 rounded-full blur-2xl" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS — Gold stars */}
-      <section className="section bg-neutral-50">
-        <div className="container-wide">
-          <div className="text-center mb-12">
-            <span className="inline-block px-4 py-1.5 bg-accent-100 text-accent-700 rounded-full text-sm font-medium mb-4">Success Stories</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-display">What Our Community Says</h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-300">
-              <div className="flex gap-1 mb-4"><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /></div>
-              <p className="text-neutral-700 mb-6">&quot;Xperience Education made my dream of studying in America come true. The support from day one was incredible, and my host family became my second family.&quot;</p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-secondary-100 flex items-center justify-center"><Users className="w-6 h-6 text-secondary-500" /></div>
-                <div><div className="font-semibold text-neutral-900">Sofia Martinez</div><div className="text-sm text-neutral-500">F1 Student from Mexico</div></div>
-              </div>
-            </div>
-            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-300">
-              <div className="flex gap-1 mb-4"><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /></div>
-              <p className="text-neutral-700 mb-6">&quot;Hosting exchange students has been one of the most rewarding experiences for our family. We&apos;ve learned so much about different cultures.&quot;</p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-accent-100 flex items-center justify-center"><Users className="w-6 h-6 text-accent-500" /></div>
-                <div><div className="font-semibold text-neutral-900">The Johnson Family</div><div className="text-sm text-neutral-500">Host Family, Texas</div></div>
-              </div>
-            </div>
-            <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-300">
-              <div className="flex gap-1 mb-4"><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /><Star className="w-5 h-5 fill-accent-400 text-accent-400" /></div>
-              <p className="text-neutral-700 mb-6">&quot;As a partner agency, we&apos;ve sent over 100 students through Xperience Edu. Their professionalism and support are unmatched in the industry.&quot;</p>
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-primary-100 flex items-center justify-center"><Users className="w-6 h-6 text-primary-500" /></div>
-                <div><div className="font-semibold text-neutral-900">Chen Wei</div><div className="text-sm text-neutral-500">Partner Agency, China</div></div>
-              </div>
             </div>
           </div>
         </div>
