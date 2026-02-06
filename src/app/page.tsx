@@ -81,15 +81,15 @@ function RotatingText({ words, className }: { words: string[], className?: strin
         setCurrentIndex((prev) => (prev + 1) % words.length)
         setIsAnimating(false)
       }, 500) // Half of transition time
-    }, 3000) // Change every 3 seconds
+    }, 5000) // Change every 5 seconds
 
     return () => clearInterval(interval)
   }, [words.length])
 
   return (
-    <span className={`inline-block relative ${className}`}>
+    <span className={`block overflow-visible ${className}`}>
       <span 
-        className={`inline-block transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400 ${
+        className={`inline-block transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400 pr-2 ${
           isAnimating 
             ? 'opacity-0 translate-y-4' 
             : 'opacity-100 translate-y-0'
