@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, GraduationCap, Globe, BookOpen, Sun, Calendar, CheckCircle2, Shield, Monitor } from 'lucide-react'
+import { ArrowRight, GraduationCap, Globe, BookOpen, Sun, Calendar, CheckCircle2, Shield, Monitor, MapPin } from 'lucide-react'
 
 const programs = [
   {
@@ -23,6 +23,16 @@ const programs = [
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
     features: ['Host family', 'Public school', 'Cultural immersion'],
+  },
+  {
+    title: 'Study in Canada',
+    href: '/students/canada',
+    description: 'Experience world-class education in Canada. High school programs, short-term experiences, and summer camps across all provinces.',
+    badge: 'Canada',
+    badgeColor: 'bg-red-100 text-red-700',
+    iconBg: 'bg-red-100',
+    iconColor: 'text-red-600',
+    features: ['Host family', '3-10 month programs', 'Summer camps'],
   },
   {
     title: 'Virtual High School',
