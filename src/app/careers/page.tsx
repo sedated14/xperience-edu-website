@@ -5,13 +5,6 @@ import { ArrowRight, Briefcase, CheckCircle2, Globe, Users, DollarSign, Clock, T
 
 const positions = [
   {
-    title: 'Regional Coordinator',
-    type: '1099 Contractor',
-    location: 'Nationwide (Remote + Local)',
-    description: 'Manage host families, students, and school relationships in your region. Be the local face of Xperience Education.',
-    responsibilities: ['Host family recruitment & vetting', 'Student orientation & monthly check-ins', 'School relationship management', 'Emergency response coordination'],
-  },
-  {
     title: 'International Recruitment Agent',
     type: '1099 Contractor',
     location: 'International (Remote)',
