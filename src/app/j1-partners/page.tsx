@@ -20,7 +20,7 @@ import {
 const benefits = [
   {
     icon: FileCheck,
-    title: 'Guaranteed J1 Visa Access',
+    title: 'J1 Visa Access',
     description: 'Secure DS-2019 allocations through our designated U.S. Department of State sponsor — no more waiting lists or rejections.',
   },
   {
@@ -54,7 +54,7 @@ const timeline = [
   { step: '1', title: 'Apply to Partner', description: 'Submit your agency information and we\'ll schedule a call to discuss your needs.' },
   { step: '2', title: 'Sign Agreement', description: 'Review and sign the partnership agreement. Receive your initial quota allocation.' },
   { step: '3', title: 'Submit Students', description: 'Use our online system to submit student applications with all required documents.' },
-  { step: '4', title: 'Placement & Support', description: 'We handle host family matching, school placement, and provide ongoing support.' },
+  { step: '4', title: 'Placement & Support', description: 'Students will receive host family matching, school placement and ongoing support throughout the program.' },
 ]
 
 const faqs = [
@@ -202,6 +202,194 @@ export default function J1PartnersPage() {
                 alt="High school hallway"
                 className="w-full h-full object-cover"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ WHAT IS J-1 PROGRAM ============ */}
+      <section className="section bg-white">
+        <div className="container-wide">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">About the Program</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">
+                What is the J-1 High School Program?
+              </h2>
+              <p className="text-lg text-neutral-600 mt-4 max-w-3xl mx-auto">
+                The J-1 High School Exchange Program is a cultural exchange initiative sponsored by the U.S. government, 
+                allowing international students to attend a public high school in the U.S. for up to one academic year.
+              </p>
+            </div>
+            
+            <div className="bg-emerald-50 rounded-3xl p-8 border border-emerald-100">
+              <h3 className="font-bold text-neutral-900 text-lg mb-6">This program offers students the opportunity to:</h3>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-neutral-700">Experience American education and culture firsthand</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-neutral-700">Improve English language skills in an immersive environment</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-neutral-700">Live with a carefully selected host family</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-neutral-700">Participate in school activities, sports, and community events</span>
+                </div>
+                <div className="flex items-start gap-3 sm:col-span-2">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                  <span className="text-neutral-700">Build lifelong friendships and global connections</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ HOW WE HELP ============ */}
+      <section className="section bg-neutral-50">
+        <div className="container-wide">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">Our Role</span>
+                <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">
+                  How We Help
+                </h2>
+                <p className="text-lg text-neutral-600 mt-4">
+                  At Xperience Education, we work closely with U.S. Department of State-designated J-1 visa sponsoring 
+                  organizations to assist international students in experiencing high school life in the United States.
+                </p>
+                <p className="text-neutral-600 mt-4">
+                  Our team supports students throughout the process, from application to placement and beyond, 
+                  ensuring a smooth and enriching cultural exchange experience.
+                </p>
+              </div>
+              <div className="bg-white rounded-3xl p-8 shadow-soft">
+                <h3 className="font-bold text-neutral-900 mb-6">We work alongside official J-1 visa sponsors to:</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    </div>
+                    <span className="text-neutral-700">Assist students in the application and placement process</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    </div>
+                    <span className="text-neutral-700">Help ensure compliance with U.S. Department of State regulations</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    </div>
+                    <span className="text-neutral-700">Provide ongoing support to students, host families, and schools</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    </div>
+                    <span className="text-neutral-700">Work with sending organizations to make the process seamless</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ PROGRAM RULES & REQUIREMENTS ============ */}
+      <section className="section bg-white">
+        <div className="container-wide">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Guidelines</span>
+              <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">
+                Program Rules & Requirements
+              </h2>
+              <p className="text-lg text-neutral-600 mt-4">
+                To ensure a successful and compliant exchange experience, students participating in the J-1 High School Program must follow these key guidelines:
+              </p>
+            </div>
+            
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="bg-neutral-50 rounded-2xl p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-5 h-5 text-secondary-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900">Duration</h4>
+                    <p className="text-neutral-600 text-sm mt-1">Limited to one academic year — students cannot extend or repeat under J-1 status.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-neutral-50 rounded-2xl p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <GraduationCap className="w-5 h-5 text-secondary-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900">Public School Enrollment</h4>
+                    <p className="text-neutral-600 text-sm mt-1">Students are placed in public high schools across the U.S. and cannot choose their school location.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-neutral-50 rounded-2xl p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Users className="w-5 h-5 text-secondary-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900">Host Family Living</h4>
+                    <p className="text-neutral-600 text-sm mt-1">Students live with an approved host family who volunteers to provide a safe and welcoming home.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-neutral-50 rounded-2xl p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <FileCheck className="w-5 h-5 text-secondary-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900">Academic Performance</h4>
+                    <p className="text-neutral-600 text-sm mt-1">Students must maintain satisfactory grades and meet attendance requirements.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-neutral-50 rounded-2xl p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Shield className="w-5 h-5 text-secondary-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900">Age Requirement</h4>
+                    <p className="text-neutral-600 text-sm mt-1">Students must typically be between 15-18 years old at the start of the program.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-neutral-50 rounded-2xl p-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <Globe className="w-5 h-5 text-secondary-600" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-neutral-900">Cultural Exchange Focus</h4>
+                    <p className="text-neutral-600 text-sm mt-1">The primary goal is cultural exchange — students cannot work and must engage in school and community.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
