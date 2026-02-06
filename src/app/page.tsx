@@ -87,13 +87,20 @@ function RotatingText({ words, className }: { words: string[], className?: strin
   }, [words.length])
 
   return (
-    <span className={`block overflow-visible ${className}`}>
+    <span className={`block ${className}`} style={{ overflow: 'visible' }}>
       <span 
-        className={`inline-block transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400 pr-2 ${
+        className={`inline-block transition-all duration-500 pb-2 ${
           isAnimating 
             ? 'opacity-0 translate-y-4' 
             : 'opacity-100 translate-y-0'
         }`}
+        style={{ 
+          backgroundImage: 'linear-gradient(to right, var(--color-secondary-400), var(--color-secondary-300), var(--color-accent-400))',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          paddingRight: '0.1em'
+        }}
       >
         {words[currentIndex]}
       </span>
@@ -148,9 +155,9 @@ export default function HomePage() {
                 <Globe className="w-4 h-4" />
                 Connecting Students to Their American Dream
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight font-display animate-fade-up">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight font-display animate-fade-up overflow-visible">
                 Your Gateway to
-                <span className="block mt-2">
+                <span className="block mt-2 overflow-visible">
                   <RotatingText 
                     words={['F1 Visa Programs', 'J1 Exchange Programs', 'Summer Programs', 'Short-Term Programs', 'US High School Education']} 
                   />
