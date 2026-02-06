@@ -185,65 +185,60 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* ============ TWO IMAGE BREAK ============ */}
-      <section className="py-4 bg-neutral-50">
-        <div className="container-wide">
-          <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
-            <div className="aspect-[16/10] rounded-2xl overflow-hidden shadow-soft">
-              <img 
-                src="/images/High School Building 1.png" 
-                alt="American high school campus"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="aspect-[16/10] rounded-2xl overflow-hidden shadow-soft">
-              <img 
-                src="/images/lockers.png" 
-                alt="High school hallway"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ============ WHAT IS J-1 PROGRAM ============ */}
+      {/* ============ WHAT IS J-1 PROGRAM - TEXT LEFT, IMAGE RIGHT ============ */}
       <section className="section bg-white">
         <div className="container-wide">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-10">
-              <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">About the Program</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">
-                What is the J-1 High School Program?
-              </h2>
-              <p className="text-lg text-neutral-600 mt-4 max-w-3xl mx-auto">
-                The J-1 High School Exchange Program is a cultural exchange initiative sponsored by the U.S. government, 
-                allowing international students to attend a public high school in the U.S. for up to one academic year.
-              </p>
-            </div>
-            
-            <div className="bg-emerald-50 rounded-3xl p-8 border border-emerald-100">
-              <h3 className="font-bold text-neutral-900 text-lg mb-6">This program offers students the opportunity to:</h3>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-neutral-700">Experience American education and culture firsthand</span>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              {/* Text Left */}
+              <div>
+                <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">About the Program</span>
+                <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">
+                  What is the J-1 High School Program?
+                </h2>
+                <p className="text-lg text-neutral-600 mt-4">
+                  The J-1 High School Exchange Program is a cultural exchange initiative sponsored by the U.S. government, 
+                  allowing international students to attend a public high school in the U.S. for up to one academic year.
+                </p>
+                
+                <div className="mt-8 space-y-3">
+                  <p className="font-semibold text-neutral-900">This program offers students the opportunity to:</p>
+                  <div className="space-y-3">
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-neutral-700">Experience American education and culture firsthand</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-neutral-700">Improve English language skills in an immersive environment</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-neutral-700">Live with a carefully selected host family</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-neutral-700">Participate in school activities, sports, and community events</span>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-neutral-700">Build lifelong friendships and global connections</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-neutral-700">Improve English language skills in an immersive environment</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-neutral-700">Live with a carefully selected host family</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-neutral-700">Participate in school activities, sports, and community events</span>
-                </div>
-                <div className="flex items-start gap-3 sm:col-span-2">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
-                  <span className="text-neutral-700">Build lifelong friendships and global connections</span>
+              </div>
+              
+              {/* Image Right */}
+              <div className="relative">
+                <img 
+                  src="/images/High School Building 1.png" 
+                  alt="American high school campus"
+                  className="rounded-3xl shadow-elevated w-full"
+                />
+                {/* Optional floating accent */}
+                <div className="absolute -bottom-6 -left-6 bg-emerald-600 text-white rounded-2xl p-4 shadow-lg hidden sm:block">
+                  <div className="text-2xl font-bold">1 Year</div>
+                  <div className="text-emerald-100 text-sm">Cultural Exchange</div>
                 </div>
               </div>
             </div>
@@ -299,6 +294,24 @@ export default function J1PartnersPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ BANNER IMAGE ============ */}
+      <section className="relative h-64 md:h-80">
+        <img 
+          src="/images/lockers.png" 
+          alt="High school hallway with lockers"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/70 via-primary-950/50 to-transparent" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="container-wide">
+            <div className="max-w-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-white font-display">The Authentic American High School Experience</h3>
+              <p className="text-white/80 mt-3">From lockers and lunch halls to sports games and prom — your students will experience it all.</p>
             </div>
           </div>
         </div>
