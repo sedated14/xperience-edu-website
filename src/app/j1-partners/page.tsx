@@ -120,7 +120,7 @@ export default function J1PartnersPage() {
             alt="International students in America"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary-950 via-primary-950/95 to-primary-950/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-950/70 to-primary-950/40" />
         </div>
         
         <div className="container-wide relative z-10">
