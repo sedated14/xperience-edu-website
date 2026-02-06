@@ -44,7 +44,7 @@ export function Footer() {
             </Link>
             <p className="text-neutral-400 mt-4 max-w-sm">
               Connecting international students with exceptional American high school 
-              experiences since 2009. Your gateway to F1 and J1 programs.
+              experiences. Your gateway to F1 and J1 programs.
             </p>
             <div className="flex gap-3 mt-6">
               {socialLinks.map((social) => (
