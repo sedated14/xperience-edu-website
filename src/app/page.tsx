@@ -89,7 +89,7 @@ function RotatingText({ words, className }: { words: string[], className?: strin
   return (
     <span className={`inline-block relative ${className}`}>
       <span 
-        className={`inline-block transition-all duration-500 ${
+        className={`inline-block transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400 ${
           isAnimating 
             ? 'opacity-0 translate-y-4' 
             : 'opacity-100 translate-y-0'
@@ -150,7 +150,7 @@ export default function HomePage() {
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight font-display animate-fade-up">
                 Your Gateway to
-                <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400">
+                <span className="block mt-2">
                   <RotatingText 
                     words={['F1 Visa Programs', 'J1 Exchange Programs', 'Summer Programs', 'Short-Term Programs', 'US High School Education']} 
                   />
