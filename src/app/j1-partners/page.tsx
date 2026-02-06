@@ -89,10 +89,44 @@ export default function J1PartnersPage() {
   const [formData, setFormData] = useState({
     agencyName: '', country: '', contactName: '', email: '', phone: '', studentVolume: '', message: ''
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    alert('Thank you! We\'ll be in touch within 24 hours to schedule a call.')
+    setIsSubmitting(true)
+    setError('')
+
+    try {
+      const response = await fetch('https://formspree.io/f/xpqjzwbg', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formType: 'J1 Partner Application',
+          agencyName: formData.agencyName,
+          country: formData.country,
+          contactName: formData.contactName,
+          email: formData.email,
+          phone: formData.phone,
+          studentVolume: formData.studentVolume,
+          message: formData.message,
+        }),
+      })
+
+      if (response.ok) {
+        setIsSubmitted(true)
+        setFormData({ agencyName: '', country: '', contactName: '', email: '', phone: '', studentVolume: '', message: '' })
+      } else {
+        setError('Something went wrong. Please try again.')
+      }
+    } catch {
+      setError('Something went wrong. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -598,7 +632,27 @@ export default function J1PartnersPage() {
             </div>
 
             <div className="bg-white rounded-3xl p-6 sm:p-8 text-neutral-900">
+              {isSubmitted ? (
+                <div className="text-center py-12">
+                  <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle2 className="w-8 h-8 text-emerald-600" />
+                  </div>
+                  <h3 className="text-xl font-bold text-neutral-900 mb-2">Application Submitted!</h3>
+                  <p className="text-neutral-600">Thank you for your interest. We&apos;ll be in touch within 24 hours to schedule a call.</p>
+                  <button 
+                    onClick={() => setIsSubmitted(false)} 
+                    className="btn bg-emerald-600 text-white hover:bg-emerald-700 mt-6"
+                  >
+                    Submit Another Application
+                  </button>
+                </div>
+              ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                {error && (
+                  <div className="bg-red-50 text-red-600 px-4 py-3 rounded-xl text-sm">
+                    {error}
+                  </div>
+                )}
                 <div>
                   <label className="block text-sm font-medium text-neutral-700 mb-1.5">Agency / Company Name *</label>
                   <input
@@ -679,13 +733,30 @@ export default function J1PartnersPage() {
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
                 </div>
-                <button type="submit" className="w-full btn bg-emerald-600 text-white hover:bg-emerald-700 btn-lg">
-                  Submit Application <ArrowRight className="w-5 h-5" />
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="w-full btn bg-emerald-600 text-white hover:bg-emerald-700 btn-lg disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <svg className="animate-spin w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                        <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                      </svg>
+                      Submitting...
+                    </>
+                  ) : (
+                    <>
+                      Submit Application <ArrowRight className="w-5 h-5" />
+                    </>
+                  )}
                 </button>
                 <p className="text-xs text-neutral-500 text-center">
                   By submitting, you agree to be contacted about partnership opportunities.
                 </p>
               </form>
+              )}
             </div>
           </div>
         </div>
