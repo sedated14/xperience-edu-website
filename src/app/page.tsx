@@ -305,7 +305,7 @@ export default function HomePage() {
             <div>
               <span className="inline-block px-4 py-1.5 bg-secondary-500/20 text-secondary-400 rounded-full text-sm font-medium mb-4">Why Choose Us</span>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display">Excellence in International <span className="text-secondary-400">Education</span></h2>
-              <p className="text-lg text-neutral-400 mt-4">With over 15 years of experience, we&apos;ve helped thousands of students achieve their dreams of studying in America.</p>
+              <p className="text-lg text-neutral-400 mt-4">With over 15 years of collective experience, we&apos;ve helped thousands of students achieve their dreams of studying in America.</p>
               <div className="grid sm:grid-cols-2 gap-4 mt-8">
                 <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Personalized school matching</span></div>
                 <div className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-accent-400 flex-shrink-0" /><span className="text-neutral-300">Comprehensive visa support</span></div>
