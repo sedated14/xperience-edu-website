@@ -1,13 +1,13 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, GraduationCap, Globe, BookOpen, Sun, Calendar, CheckCircle2, Star, Users, Shield } from 'lucide-react'
+import { ArrowRight, GraduationCap, Globe, BookOpen, Sun, Calendar, CheckCircle2, Shield } from 'lucide-react'
 
 const programs = [
   {
     title: 'F1 Visa Programs',
     href: '/students/f1-visa',
-    description: 'Attend a private or boarding school in the US with a student visa. Graduate with a US diploma and prepare for American universities.',
+    description: 'Attend a Private, Public or Boarding School in the US with a student visa. Graduate with a US diploma and prepare for American universities.',
     badge: 'Most Popular',
     badgeColor: 'bg-secondary-100 text-secondary-700',
     iconBg: 'bg-secondary-100',
@@ -131,7 +131,7 @@ export default function StudentsPage() {
                 </div>
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0"><Shield className="w-5 h-5 text-secondary-600" /></div>
-                  <div><h4 className="font-semibold text-neutral-900">Full Support</h4><p className="text-neutral-600 text-sm mt-1">24/7 support from coordinators and dedicated staff</p></div>
+                  <div><h4 className="font-semibold text-neutral-900">Local Support</h4><p className="text-neutral-600 text-sm mt-1">Local support from coordinators and dedicated staff</p></div>
                 </div>
               </div>
             </div>
@@ -148,31 +148,10 @@ export default function StudentsPage() {
       {/* TRUST SECTION */}
       <section className="section bg-primary-950 text-white">
         <div className="container-wide">
-          <div className="text-center mb-12">
+          <div className="text-center">
             <span className="inline-block px-4 py-1.5 bg-secondary-500/20 text-secondary-400 rounded-full text-sm font-medium mb-4">Why Xperience</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display">Trusted by Thousands of <span className="text-secondary-400">Families</span></h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-4"><Star className="w-8 h-8 text-accent-400" /></div>
-              <div className="text-3xl font-bold">4.9/5</div>
-              <div className="text-neutral-400 mt-1">Average Rating</div>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-4"><Users className="w-8 h-8 text-secondary-400" /></div>
-              <div className="text-3xl font-bold">5,000+</div>
-              <div className="text-neutral-400 mt-1">Students Placed</div>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-4"><Globe className="w-8 h-8 text-accent-400" /></div>
-              <div className="text-3xl font-bold">50+</div>
-              <div className="text-neutral-400 mt-1">Countries</div>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center mx-auto mb-4"><Shield className="w-8 h-8 text-secondary-400" /></div>
-              <div className="text-3xl font-bold">98%</div>
-              <div className="text-neutral-400 mt-1">Success Rate</div>
-            </div>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display">Trusted by Families, Students, Schools and <span className="text-secondary-400">Agencies Worldwide</span></h2>
+            <p className="text-lg text-neutral-400 mt-6 max-w-2xl mx-auto">With over 15 years of experience, we&apos;ve built a reputation for excellence in international student placement. Our dedicated team ensures every student has a safe, successful, and transformative experience.</p>
           </div>
         </div>
       </section>
