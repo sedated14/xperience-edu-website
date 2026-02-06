@@ -290,7 +290,7 @@ export default function HomePage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Ready to Start Your International Education Journey?</h2>
           <p className="text-lg sm:text-xl text-white/80 mt-4 max-w-2xl mx-auto">Take the first step toward your American education experience. Our team is ready to guide you every step of the way.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/students" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
             <Link href="/about/contact" className="btn-ghost btn-lg">Contact Us</Link>
           </div>
         </div>
