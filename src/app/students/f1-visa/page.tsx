@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { ArrowRight, GraduationCap, CheckCircle2, BookOpen, Home, Shield, Globe, Star, Calendar, DollarSign } from 'lucide-react'
 
 const highlights = [
-  { title: 'US Diploma', description: 'Graduate with an accredited American high school diploma', icon: GraduationCap },
+  { title: 'School Choice', description: 'Choose a school based on Location, Academic Profile, Sports Participation, Extracurriculars Offered, or The Ability to Graduate and Earn a Diploma', icon: Home },
+  { title: 'Flexible Durations', description: 'Attend for 1 week to multiple years', icon: Calendar },
   { title: 'University Pathway', description: 'Direct pathway to US colleges and universities', icon: BookOpen },
-  { title: 'Public or Private School', description: 'Attend top Public or Private Day Schools or Boarding Schools', icon: Home },
   { title: 'Local Support', description: 'Local area support from dedicated program coordinators', icon: Shield },
 ]
 
@@ -111,8 +111,8 @@ export default function F1VisaPage() {
           <div className="max-w-3xl mx-auto space-y-8">
             {[
               { step: '01', title: 'Inquire & Consult', desc: 'Inquire and schedule a consultation. We assess your goals, academic level, and preferences.' },
-              { step: '02', title: 'Apply', desc: 'Complete our application and apply to the school of your choice.' },
-              { step: '03', title: 'School Matching', desc: 'We match you with schools that fit your academic profile, interests, location preferences, and budget.' },
+              { step: '02', title: 'School Matching', desc: 'We match you with schools that fit your academic profile, interests, location preferences, and budget.' },
+              { step: '03', title: 'Apply', desc: 'Complete our application and apply to the school of your choice.' },
               { step: '04', title: 'Acceptance & Visa', desc: 'Once accepted, we guide you through the I-20 process and F1 visa application with full support.' },
               { step: '05', title: 'Pre-Departure Prep', desc: 'Orientation, travel planning, health insurance, and everything you need for a smooth transition.' },
               { step: '06', title: 'Arrive & Thrive', desc: 'Welcome to America! Our coordinators provide ongoing support throughout your entire program.' },
