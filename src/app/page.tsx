@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { 
   ArrowRight, 
@@ -14,6 +15,120 @@ import {
   CheckCircle2,
   Play
 } from 'lucide-react'
+
+// Animated counter hook
+function useCountUp(end: number, duration: number = 2000, startOnView: boolean = true) {
+  const [count, setCount] = useState(0)
+  const [hasStarted, setHasStarted] = useState(false)
+  const ref = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (!startOnView) {
+      setHasStarted(true)
+    }
+  }, [startOnView])
+
+  useEffect(() => {
+    if (startOnView && ref.current) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting && !hasStarted) {
+            setHasStarted(true)
+          }
+        },
+        { threshold: 0.5 }
+      )
+      observer.observe(ref.current)
+      return () => observer.disconnect()
+    }
+  }, [startOnView, hasStarted])
+
+  useEffect(() => {
+    if (!hasStarted) return
+
+    let startTime: number
+    let animationFrame: number
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp
+      const progress = Math.min((timestamp - startTime) / duration, 1)
+      
+      // Easing function for smooth animation
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4)
+      setCount(Math.floor(easeOutQuart * end))
+
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate)
+      }
+    }
+
+    animationFrame = requestAnimationFrame(animate)
+    return () => cancelAnimationFrame(animationFrame)
+  }, [end, duration, hasStarted])
+
+  return { count, ref }
+}
+
+// Rotating text component
+function RotatingText({ words, className }: { words: string[], className?: string }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const [isAnimating, setIsAnimating] = useState(false)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsAnimating(true)
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % words.length)
+        setIsAnimating(false)
+      }, 500) // Half of transition time
+    }, 3000) // Change every 3 seconds
+
+    return () => clearInterval(interval)
+  }, [words.length])
+
+  return (
+    <span className={`inline-block relative ${className}`}>
+      <span 
+        className={`inline-block transition-all duration-500 ${
+          isAnimating 
+            ? 'opacity-0 translate-y-4' 
+            : 'opacity-100 translate-y-0'
+        }`}
+      >
+        {words[currentIndex]}
+      </span>
+    </span>
+  )
+}
+
+// Animated stat component
+function AnimatedStat({ value, suffix = '', label }: { value: number, suffix?: string, label: string }) {
+  const { count, ref } = useCountUp(value, 2000)
+  
+  return (
+    <div className="text-center" ref={ref}>
+      <div className="text-2xl font-bold text-white">
+        {count}{suffix}
+      </div>
+      <div className="text-sm text-white/60">{label}</div>
+    </div>
+  )
+}
+
+// Animated stat card for stats section
+function AnimatedStatCard({ value, suffix = '', label, icon: Icon }: { value: number, suffix?: string, label: string, icon: React.ElementType }) {
+  const { count, ref } = useCountUp(value, 2000)
+  
+  return (
+    <div className="text-center group" ref={ref}>
+      <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors">
+        <Icon className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" />
+      </div>
+      <div className="stat-number text-primary-900">{count.toLocaleString()}{suffix}</div>
+      <div className="text-neutral-600 mt-2">{label}</div>
+    </div>
+  )
+}
 
 export default function HomePage() {
   return (
@@ -36,7 +151,9 @@ export default function HomePage() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight font-display animate-fade-up">
                 Your Gateway to
                 <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400">
-                  US High School Education
+                  <RotatingText 
+                    words={['F1 Visa Programs', 'J1 Exchange Programs', 'Summer Programs', 'Short-Term Programs', 'US High School Education']} 
+                  />
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-xl mx-auto lg:mx-0 animate-fade-up animation-delay-200">
@@ -56,18 +173,9 @@ export default function HomePage() {
               <div className="mt-12 pt-8 border-t border-white/10 animate-fade-up animation-delay-600">
                 <p className="text-white/60 text-sm mb-4">Trusted by families worldwide</p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-6">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white">15+</div>
-                    <div className="text-sm text-white/60">Years Experience</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white">50+</div>
-                    <div className="text-sm text-white/60">Countries Served</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-white">200+</div>
-                    <div className="text-sm text-white/60">Partner Schools</div>
-                  </div>
+                  <AnimatedStat value={15} suffix="+" label="Years Experience" />
+                  <AnimatedStat value={50} suffix="+" label="Countries Served" />
+                  <AnimatedStat value={200} suffix="+" label="Partner Schools" />
                 </div>
               </div>
             </div>
@@ -181,26 +289,10 @@ export default function HomePage() {
       <section className="section bg-white">
         <div className="container-wide">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors"><Award className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" /></div>
-              <div className="stat-number text-primary-900">15+</div>
-              <div className="text-neutral-600 mt-2">Years of Experience</div>
-            </div>
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors"><GraduationCap className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" /></div>
-              <div className="stat-number text-primary-900">5,000+</div>
-              <div className="text-neutral-600 mt-2">Students Placed</div>
-            </div>
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors"><Building2 className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" /></div>
-              <div className="stat-number text-primary-900">200+</div>
-              <div className="text-neutral-600 mt-2">Partner Schools</div>
-            </div>
-            <div className="text-center group">
-              <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors"><Globe className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" /></div>
-              <div className="stat-number text-primary-900">50+</div>
-              <div className="text-neutral-600 mt-2">Countries Served</div>
-            </div>
+            <AnimatedStatCard value={15} suffix="+" label="Years of Experience" icon={Award} />
+            <AnimatedStatCard value={5000} suffix="+" label="Students Placed" icon={GraduationCap} />
+            <AnimatedStatCard value={200} suffix="+" label="Partner Schools" icon={Building2} />
+            <AnimatedStatCard value={50} suffix="+" label="Countries Served" icon={Globe} />
           </div>
         </div>
       </section>
