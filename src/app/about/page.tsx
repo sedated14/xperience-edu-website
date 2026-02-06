@@ -18,7 +18,7 @@ export default function AboutPage() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
               15+ Years of
-              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400">Changing Lives</span>
+              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Changing Lives</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
               Since 2009, we&apos;ve connected thousands of international students with life-changing American education experiences.

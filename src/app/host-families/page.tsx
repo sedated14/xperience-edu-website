@@ -18,7 +18,7 @@ export default function HostFamiliesPage() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
               Open Your Home,
-              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-secondary-400">Change a Life</span>
+              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-secondary-400 pb-2">Change a Life</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
               Host an international student and experience the world from your living room. Build cross-cultural connections that last a lifetime.

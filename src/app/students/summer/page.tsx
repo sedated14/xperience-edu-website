@@ -18,9 +18,9 @@ export default function SummerPage() {
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
               Make This Summer
-              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-accent-400">Unforgettable</span>
+              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-accent-400 pb-2">Unforgettable</span>
             </h1>
-            <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
+            <p className="text-lg sm:text-xl text-white/80 mt-4 max-w-2xl">
               Academic courses, summer camps, STEM programs, and more. Spend your summer learning, growing, and exploring the US.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">

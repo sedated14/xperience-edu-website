@@ -89,7 +89,7 @@ function RotatingText({ words, className }: { words: string[], className?: strin
   return (
     <span className={`block ${className}`}>
       <span 
-        className={`inline-block transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400 leading-normal pb-4 ${
+        className={`inline-block transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400 leading-tight pb-2 ${
           isAnimating 
             ? 'opacity-0 translate-y-4' 
             : 'opacity-100 translate-y-0'
@@ -150,13 +150,13 @@ export default function HomePage() {
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight font-display animate-fade-up overflow-visible">
                 Your Gateway to
-                <span className="block mt-2 overflow-visible">
+                <span className="block overflow-visible">
                   <RotatingText 
                     words={['F1 Visa Programs', 'J1 Exchange Programs', 'Summer Programs', 'Short-Term Programs', 'US High School Education']} 
                   />
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-xl mx-auto lg:mx-0 animate-fade-up animation-delay-200">
+              <p className="text-lg sm:text-xl text-white/80 mt-2 max-w-xl mx-auto lg:mx-0 animate-fade-up animation-delay-200">
                 F1 Visa, J1 Exchange, Short-Term, and Summer Programs. 
                 Start your international education journey with a trusted partner.
               </p>
