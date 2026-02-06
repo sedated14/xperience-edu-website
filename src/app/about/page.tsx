@@ -18,8 +18,8 @@ export default function AboutPage() {
                 About Xperience Education
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
-                A Team Dedicated to
-                <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Changing Lives</span>
+                A Team Dedicated
+                <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">to Changing Lives</span>
               </h1>
               <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
                 At Xperience Education, we are dedicated to fostering global education opportunities for international students.

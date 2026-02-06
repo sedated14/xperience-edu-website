@@ -178,7 +178,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-3 text-sm text-neutral-600">
                     <Globe className="w-4 h-4 text-secondary-500 flex-shrink-0" />
-                    We speak English, Spanish, and Mandarin
+                    Video consultations available worldwide
                   </div>
                   <div className="flex items-center gap-3 text-sm text-neutral-600">
                     <CheckCircle2 className="w-4 h-4 text-secondary-500 flex-shrink-0" />
@@ -188,11 +188,21 @@ export default function ContactPage() {
               </div>
 
               <div className="bg-primary-950 rounded-3xl p-6 text-white">
-                <h3 className="font-bold mb-2">Emergency?</h3>
-                <p className="text-neutral-400 text-sm">Current students and host families with urgent issues can reach our 24/7 emergency line.</p>
-                <a href="tel:+17025550911" className="inline-flex items-center gap-2 text-secondary-400 font-medium mt-3 hover:text-secondary-300 transition-colors">
-                  <Phone className="w-4 h-4" /> Emergency: +1 (702) 555-0911
-                </a>
+                <h3 className="font-bold mb-3">What Happens Next?</h3>
+                <div className="space-y-2 text-sm text-neutral-300">
+                  <div className="flex items-start gap-2">
+                    <span className="text-secondary-400 font-bold">1.</span>
+                    <span>We&apos;ll review your inquiry and respond within 24 hours</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-secondary-400 font-bold">2.</span>
+                    <span>Schedule a free consultation call to discuss your goals</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-secondary-400 font-bold">3.</span>
+                    <span>Receive a personalized program recommendation</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
