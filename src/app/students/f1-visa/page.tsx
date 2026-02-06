@@ -4,7 +4,9 @@ import Link from 'next/link'
 import { ArrowRight, GraduationCap, CheckCircle2, BookOpen, Home, Shield, Globe, Star, Calendar, DollarSign } from 'lucide-react'
 
 const highlights = [
-  { title: 'School Choice', description: 'Choose a school based on Location, Academic Profile, Sports Participation, Extracurriculars Offered, or The Ability to Graduate and Earn a Diploma', icon: Home },
+  { title: 'School Choice', description: 'Choose a school based on Location, Academic Profile, Sports Participation, or Extracurriculars Offered', icon: Star },
+  { title: 'Public or Private School', description: 'Attend top Public or Private Day Schools or Boarding Schools', icon: Home },
+  { title: 'US Diploma', description: 'Graduate with an accredited American high school diploma', icon: GraduationCap },
   { title: 'Flexible Durations', description: 'Attend for 1 week to multiple years', icon: Calendar },
   { title: 'University Pathway', description: 'Direct pathway to US colleges and universities', icon: BookOpen },
   { title: 'Local Support', description: 'Local area support from dedicated program coordinators', icon: Shield },
@@ -89,7 +91,7 @@ export default function F1VisaPage() {
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Program Highlights</span>
             <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">Why Choose F1?</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {highlights.map((item) => (
               <div key={item.title} className="bg-white rounded-2xl p-6 shadow-soft hover:shadow-elevated transition-all duration-300 hover:-translate-y-1">
                 <div className="w-12 h-12 bg-secondary-100 rounded-xl flex items-center justify-center mb-4"><item.icon className="w-6 h-6 text-secondary-600" /></div>
@@ -97,6 +99,24 @@ export default function F1VisaPage() {
                 <p className="text-neutral-600 text-sm mt-2">{item.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* BANNER IMAGE */}
+      <section className="relative h-64 md:h-80">
+        <img 
+          src="/images/lockers.png" 
+          alt="American high school hallway"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/80 via-primary-950/50 to-transparent" />
+        <div className="absolute inset-0 flex items-center">
+          <div className="container-wide">
+            <div className="max-w-lg">
+              <h3 className="text-2xl md:text-3xl font-bold text-white font-display">Experience American High School Life</h3>
+              <p className="text-white/80 mt-3">From classroom learning to extracurricular activities — immerse yourself in the full American education experience.</p>
+            </div>
           </div>
         </div>
       </section>
