@@ -87,20 +87,13 @@ function RotatingText({ words, className }: { words: string[], className?: strin
   }, [words.length])
 
   return (
-    <span className={`block ${className}`} style={{ overflow: 'visible' }}>
+    <span className={`block ${className}`}>
       <span 
-        className={`inline-block transition-all duration-500 pb-2 ${
+        className={`inline-block transition-all duration-500 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 via-secondary-300 to-accent-400 leading-normal pb-4 ${
           isAnimating 
             ? 'opacity-0 translate-y-4' 
             : 'opacity-100 translate-y-0'
         }`}
-        style={{ 
-          backgroundImage: 'linear-gradient(to right, var(--color-secondary-400), var(--color-secondary-300), var(--color-accent-400))',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          paddingRight: '0.1em'
-        }}
       >
         {words[currentIndex]}
       </span>
