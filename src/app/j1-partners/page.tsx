@@ -167,7 +167,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ PROBLEM / SOLUTION ============ */}
-      <section className="section bg-neutral-50">
+      <section className="py-16 bg-neutral-50">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">The Challenge</span>
@@ -186,7 +186,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ WHAT IS J-1 PROGRAM - TEXT LEFT, IMAGE RIGHT ============ */}
-      <section className="section bg-white">
+      <section className="py-16 bg-white">
         <div className="container-wide">
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -247,7 +247,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ HOW WE HELP ============ */}
-      <section className="section bg-neutral-50">
+      <section className="py-16 bg-neutral-50">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 items-center">
@@ -318,7 +318,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ PROGRAM RULES & REQUIREMENTS ============ */}
-      <section className="section bg-white">
+      <section className="py-16 bg-white">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10">
@@ -409,7 +409,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ BENEFITS ============ */}
-      <section className="section bg-white">
+      <section className="py-16 bg-neutral-50">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">Why Partner With Us</span>
@@ -417,7 +417,7 @@ export default function J1PartnersPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {benefits.map((benefit) => (
-              <div key={benefit.title} className="bg-neutral-50 rounded-2xl p-6 hover:shadow-soft transition-shadow">
+              <div key={benefit.title} className="bg-white rounded-2xl p-6 hover:shadow-soft transition-shadow">
                 <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
                   <benefit.icon className="w-6 h-6 text-emerald-600" />
                 </div>
@@ -430,7 +430,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ HOW IT WORKS ============ */}
-      <section id="how-it-works" className="section bg-primary-950 text-white">
+      <section id="how-it-works" className="py-16 bg-primary-950 text-white">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-medium mb-4">Simple Process</span>
@@ -473,7 +473,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ KEY DEADLINES ============ */}
-      <section className="section bg-white">
+      <section className="py-16 bg-white">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -527,7 +527,7 @@ export default function J1PartnersPage() {
       </section>
 
       {/* ============ FAQs ============ */}
-      <section className="section bg-neutral-50">
+      <section className="py-16 bg-neutral-50">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">FAQs</span>
