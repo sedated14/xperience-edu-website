@@ -30,19 +30,22 @@ export default function AboutPage() {
       {/* OUR STORY */}
       <section className="section bg-white">
         <div className="container-wide">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Our Story</span>
               <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 font-display">Built on a Passion for Education</h2>
-              <p className="text-lg text-neutral-600 mt-4">Xperience Education was founded with a simple belief: every student deserves the opportunity to experience world-class education, regardless of where they were born.</p>
-              <p className="text-neutral-600 mt-4">What started as a small operation placing a handful of students has grown into one of the most trusted names in international student placement, with partnerships in over 50 countries and 200+ US schools.</p>
-              <p className="text-neutral-600 mt-4">Our team of dedicated coordinators, host family managers, and education specialists work together to ensure every student has a safe, successful, and transformative experience in America.</p>
+              <p className="text-lg text-neutral-600 mt-4">At Xperience Education, we are dedicated to fostering global education opportunities for international students. As a leading international education organization, we offer a range of programs, including F1 High School Programs, J1 High School Programs, Short-Term Exchanges, and Summer Programs designed to provide students with enriching academic and cultural experiences.</p>
+              <p className="text-neutral-600 mt-4">With over 15 years of collective experience in the international education industry, our team is committed to ensuring a smooth and successful journey for students. We work directly with students as well as sending organizations and independent recruitment representatives to facilitate seamless placement and support.</p>
             </div>
-            <div className="relative">
-              {/* REPLACE: public/images/team-photo.jpg */}
-              <div className="aspect-video bg-gradient-to-br from-secondary-100 to-accent-100 rounded-3xl flex items-center justify-center">
-                <div className="text-center text-neutral-400"><Users className="w-20 h-20 mx-auto mb-4" /><p>public/images/team-photo.jpg</p></div>
+            <div>
+              <div className="relative mb-8">
+                {/* REPLACE: public/images/team-photo.jpg */}
+                <div className="aspect-video bg-gradient-to-br from-secondary-100 to-accent-100 rounded-3xl flex items-center justify-center">
+                  <div className="text-center text-neutral-400"><Users className="w-20 h-20 mx-auto mb-4" /><p>public/images/team-photo.jpg</p></div>
+                </div>
               </div>
+              <p className="text-neutral-600">Our strong partnerships with schools, sponsoring organizations, host families, and service providers allow us to create a fully supportive environment, ensuring that each student has the resources and guidance they need to thrive academically and personally.</p>
+              <p className="text-neutral-600 mt-4">At Xperience Education, we believe in the power of international education to shape future leaders and build meaningful global connections. Whether you&apos;re a student seeking an enriching experience abroad or a partner organization looking to collaborate, we are here to support you every step of the way.</p>
             </div>
           </div>
         </div>
