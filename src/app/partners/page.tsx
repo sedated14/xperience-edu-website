@@ -41,9 +41,9 @@ export default function PartnersPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {[
               { icon: DollarSign, title: 'Competitive Commissions', desc: 'Earn generous commissions on every student placement with transparent terms', color: 'bg-accent-100 text-accent-600' },
-              { icon: Globe, title: '200+ US Schools', desc: 'Access to our extensive network of partner schools across America', color: 'bg-secondary-100 text-secondary-600' },
+              { icon: Globe, title: '200+ School Options', desc: 'Access to an extensive network of schools across America', color: 'bg-secondary-100 text-secondary-600' },
               { icon: Headphones, title: 'Dedicated Support', desc: 'Your own account manager for personalized agency support', color: 'bg-secondary-100 text-secondary-600' },
-              { icon: Shield, title: 'Trusted Brand', desc: '15+ years of proven track record in international education', color: 'bg-accent-100 text-accent-600' },
+              { icon: Shield, title: 'Experienced Team', desc: '15+ years combined experience in international education', color: 'bg-accent-100 text-accent-600' },
               { icon: Users, title: 'Marketing Materials', desc: 'Co-branded materials, presentations, and recruitment tools', color: 'bg-secondary-100 text-secondary-600' },
               { icon: TrendingUp, title: 'Training & Growth', desc: 'Regular training sessions and annual partner conferences', color: 'bg-accent-100 text-accent-600' },
             ].map((item) => (

@@ -103,7 +103,7 @@ export default function HomePage() {
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-white">200+</div>
-                    <div className="text-sm text-white/60">Partner Schools</div>
+                    <div className="text-sm text-white/60">School Options</div>
                   </div>
                 </div>
               </div>
@@ -247,8 +247,8 @@ export default function HomePage() {
               <div className="w-16 h-16 bg-secondary-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-600 transition-colors">
                 <Building2 className="w-8 h-8 text-secondary-600 group-hover:text-white transition-colors" />
               </div>
-              <h3 className="font-bold text-neutral-900">200+ Schools</h3>
-              <p className="text-neutral-600 text-sm mt-2">Partner School Network Across the United States</p>
+              <h3 className="font-bold text-neutral-900">200+ School Options</h3>
+              <p className="text-neutral-600 text-sm mt-2">School Network Across the United States</p>
             </div>
           </div>
         </div>

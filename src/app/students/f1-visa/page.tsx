@@ -74,7 +74,7 @@ export default function F1VisaPage() {
                     </div>
                     <div>
                       <div className="font-bold text-neutral-900">200+</div>
-                      <div className="text-sm text-neutral-600">Partner Schools</div>
+                      <div className="text-sm text-neutral-600">School Options</div>
                     </div>
                   </div>
                 </div>

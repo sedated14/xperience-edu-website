@@ -21,7 +21,7 @@ export default function AboutPage() {
               <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Changing Lives</span>
             </h1>
             <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
-              Since 2009, we&apos;ve connected thousands of international students with life-changing American education experiences.
+              At Xperience Education, we are dedicated to fostering global education opportunities for international students.
             </p>
           </div>
         </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl sm:text-5xl font-bold text-secondary-400">200+</div>
-              <div className="text-neutral-400 mt-2">Partner Schools</div>
+              <div className="text-neutral-400 mt-2">School Options</div>
             </div>
             <div className="text-center">
               <div className="text-4xl sm:text-5xl font-bold text-accent-400">Proven</div>
