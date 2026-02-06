@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ArrowRight, GraduationCap, Globe, BookOpen, Sun, Calendar, CheckCircle2, Shield } from 'lucide-react'
+import { ArrowRight, GraduationCap, Globe, BookOpen, Sun, Calendar, CheckCircle2, Shield, Monitor } from 'lucide-react'
 
 const programs = [
   {
@@ -23,6 +23,16 @@ const programs = [
     iconBg: 'bg-emerald-100',
     iconColor: 'text-emerald-600',
     features: ['Host family', 'Public school', 'Cultural immersion'],
+  },
+  {
+    title: 'Virtual High School',
+    href: '/students/virtual',
+    description: 'Earn a U.S. high school diploma 100% online from anywhere in the world. Flexible, affordable, and study at your own pace.',
+    badge: '100% Online',
+    badgeColor: 'bg-indigo-100 text-indigo-700',
+    iconBg: 'bg-indigo-100',
+    iconColor: 'text-indigo-600',
+    features: ['Study anywhere', 'Flexible schedule', 'U.S. diploma'],
   },
   {
     title: 'Short-Term Programs',

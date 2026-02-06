@@ -5,6 +5,7 @@ const footerLinks = {
   programs: [
     { name: 'F1 Visa Programs', href: '/students/f1-visa' },
     { name: 'J1 Exchange', href: '/students/j1-exchange' },
+    { name: 'Virtual High School', href: '/students/virtual' },
     { name: 'Short-Term Programs', href: '/students/short-term' },
     { name: 'Summer Programs', href: '/students/summer' },
   ],

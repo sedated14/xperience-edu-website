@@ -13,6 +13,7 @@ const navigation = [
     children: [
       { name: 'F1 Visa Programs', href: '/students/f1-visa', description: 'Private & boarding school options' },
       { name: 'J1 Exchange', href: '/students/j1-exchange', description: 'Cultural exchange experience' },
+      { name: 'Virtual High School', href: '/students/virtual', description: 'Earn a U.S. diploma online' },
       { name: 'Short-Term Programs', href: '/students/short-term', description: '2-12 week experiences' },
       { name: 'Summer Programs', href: '/students/summer', description: 'Summer camps & courses' },
     ],
