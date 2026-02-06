@@ -176,7 +176,7 @@ export default function CanadaPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-neutral-900 mb-1">{benefit.title}</h3>
-                  <p className="text-neutral-600 text-sm">{benefit.desc}</p>
+                  <p className="text-neutral-600 text-sm">{benefit.description}</p>
                 </div>
               </div>
             ))}
