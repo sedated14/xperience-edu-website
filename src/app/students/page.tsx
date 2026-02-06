@@ -55,23 +55,58 @@ export default function StudentsPage() {
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating" />
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed" />
         <div className="container-wide relative z-10">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-500/20 backdrop-blur-sm rounded-full text-secondary-300 text-sm mb-6">
-              <GraduationCap className="w-4 h-4" />
-              Student Programs
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-500/20 backdrop-blur-sm rounded-full text-secondary-300 text-sm mb-6">
+                <GraduationCap className="w-4 h-4" />
+                Student Programs
+              </div>
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
+                Your American Education
+                <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Starts Here</span>
+              </h1>
+              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
+                Whether you dream of earning a US diploma, experiencing American culture, or exploring summer opportunities — we have the perfect program for you.
+              </p>
+              <div className="flex flex-wrap gap-4 mt-8">
+                <Link href="/about/contact" className="btn-secondary btn-lg group">
+                  Get Started Today <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Link>
+                <Link href="#programs" className="btn-ghost btn-lg">Explore Programs</Link>
+              </div>
             </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
-              Your American Education
-              <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400">Starts Here</span>
-            </h1>
-            <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
-              Whether you dream of earning a US diploma, experiencing American culture, or exploring summer opportunities — we have the perfect program for you.
-            </p>
-            <div className="flex flex-wrap gap-4 mt-8">
-              <Link href="/about/contact" className="btn-secondary btn-lg group">
-                Get Started Today <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link href="#programs" className="btn-ghost btn-lg">Explore Programs</Link>
+            <div className="relative hidden lg:block">
+              <div className="relative aspect-square max-w-lg mx-auto">
+                <div className="absolute inset-0 rounded-3xl overflow-hidden shadow-2xl">
+                  <img
+                    src="/images/students-hero.jpg"
+                    alt="International students on American campus"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -bottom-6 -left-6 glass rounded-2xl p-4 shadow-elevated">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-secondary-600 rounded-xl flex items-center justify-center">
+                      <GraduationCap className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-neutral-900">4 Programs</div>
+                      <div className="text-sm text-neutral-600">To Choose From</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute -top-6 -right-6 glass rounded-2xl p-4 shadow-elevated">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 bg-accent-500 rounded-xl flex items-center justify-center">
+                      <Globe className="w-6 h-6 text-white" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-neutral-900">Study in</div>
+                      <div className="text-sm text-neutral-600">America</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
