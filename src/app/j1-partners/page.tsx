@@ -26,7 +26,7 @@ const benefits = [
   {
     icon: Users,
     title: 'Built for Growing Agencies',
-    description: 'Whether you\'re placing 1 student or 10, our Small Clients Division is designed specifically for agencies like yours.',
+    description: 'Whether you\'re placing 3 students or 30, our Small Clients Division is designed specifically for agencies like yours.',
   },
   {
     icon: Headphones,
@@ -60,7 +60,7 @@ const timeline = [
 const faqs = [
   {
     q: 'What is the minimum number of students required?',
-    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 10 students per year. You can start with as few as 1 student and grow from there.',
+    a: 'There is no minimum to get started. Our Small Clients Division is specifically designed for agencies placing anywhere from 1 to 50+ students per year. You can start with as few as 3 students and grow from there.',
   },
   {
     q: 'How do I get a visa allocation (quota)?',
@@ -111,11 +111,17 @@ export default function J1PartnersPage() {
         </div>
       </header>
 
-      {/* HERO */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
-        <div className="absolute inset-0 opacity-10"><div className="absolute inset-0 bg-dots-pattern" /></div>
-        <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl floating" />
-        <div className="absolute bottom-1/4 left-1/3 w-96 h-96 bg-secondary-500/10 rounded-full blur-3xl floating-delayed" />
+      {/* ============ HERO WITH BACKGROUND IMAGE ============ */}
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="/images/Students.png" 
+            alt="International students in America"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-950 via-primary-950/95 to-primary-950/70" />
+        </div>
         
         <div className="container-wide relative z-10">
           <div className="max-w-3xl">
@@ -160,7 +166,7 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* PROBLEM / SOLUTION */}
+      {/* ============ PROBLEM / SOLUTION ============ */}
       <section className="section bg-neutral-50">
         <div className="container-wide">
           <div className="max-w-3xl mx-auto text-center">
@@ -179,7 +185,29 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* BENEFITS */}
+      {/* ============ TWO IMAGE BREAK ============ */}
+      <section className="py-4 bg-neutral-50">
+        <div className="container-wide">
+          <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <div className="aspect-[16/10] rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src="/images/High School Building 1.png" 
+                alt="American high school campus"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="aspect-[16/10] rounded-2xl overflow-hidden shadow-soft">
+              <img 
+                src="/images/lockers.png" 
+                alt="High school hallway"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ BENEFITS ============ */}
       <section className="section bg-white">
         <div className="container-wide">
           <div className="text-center mb-12">
@@ -200,7 +228,7 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* HOW IT WORKS */}
+      {/* ============ HOW IT WORKS ============ */}
       <section id="how-it-works" className="section bg-primary-950 text-white">
         <div className="container-wide">
           <div className="text-center mb-12">
@@ -225,7 +253,25 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* KEY DEADLINES */}
+      {/* ============ HOST FAMILY IMAGE BANNER ============ */}
+      <section className="relative h-80 md:h-96">
+        <img 
+          src="/images/modern home.png" 
+          alt="American host family home"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-950/80 via-primary-950/40 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+          <div className="container-wide">
+            <h3 className="text-2xl md:text-3xl font-bold text-white font-display">Quality Host Families</h3>
+            <p className="text-white/80 mt-2 max-w-xl">
+              Every student is matched with a carefully vetted American host family, providing a safe and welcoming home.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============ KEY DEADLINES ============ */}
       <section className="section bg-white">
         <div className="container-wide">
           <div className="max-w-4xl mx-auto">
@@ -279,24 +325,7 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* PHOTO GALLERY - Clean 3-image row */}
-      <section className="py-12 bg-neutral-50">
-        <div className="container-wide">
-          <div className="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-              <img src="/images/Students.png" alt="International students" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-              <img src="/images/High School Building 1.png" alt="American high school" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div className="aspect-[4/3] rounded-2xl overflow-hidden">
-              <img src="/images/modern home.png" alt="Host family home" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQs */}
+      {/* ============ FAQs ============ */}
       <section className="section bg-neutral-50">
         <div className="container-wide">
           <div className="text-center mb-12">
@@ -328,7 +357,7 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* APPLICATION FORM */}
+      {/* ============ APPLICATION FORM ============ */}
       <section id="apply" className="section bg-primary-950 text-white">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
@@ -461,7 +490,7 @@ export default function J1PartnersPage() {
         </div>
       </section>
 
-      {/* FOOTER */}
+      {/* ============ FOOTER ============ */}
       <footer className="bg-primary-950 border-t border-white/10 py-8">
         <div className="container-wide text-center">
           <p className="text-white/40 text-sm">
