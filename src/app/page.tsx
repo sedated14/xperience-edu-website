@@ -275,7 +275,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.youtube.com/embed/KncXv_W7IAQ"
+                  src="https://www.youtube.com/embed/hnmZSYmtlPA"
                   title="Xperience Education"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
