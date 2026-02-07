@@ -9,6 +9,16 @@
         }
       ],
       "destination": "/j1-partners"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "j1partners.xperienceedu.com"
+        }
+      ],
+      "destination": "/j1-partners"
     }
   ]
 }
