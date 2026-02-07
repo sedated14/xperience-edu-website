@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
+import Script from 'next/script'
 import './globals.css'
 import { LayoutWrapper } from '@/components/layout/LayoutWrapper'
 
@@ -214,6 +215,18 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans min-h-screen flex flex-col">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-RPKC92700X"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RPKC92700X');
+          `}
+        </Script>
         <LayoutWrapper>{children}</LayoutWrapper>
       </body>
     </html>
