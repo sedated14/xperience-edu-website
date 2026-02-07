@@ -82,11 +82,11 @@ export default function StudentsPage() {
                 Student Programs
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white font-display">
-                Your American Education
+                Your International Education
                 <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Starts Here</span>
               </h1>
               <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
-                Whether you dream of earning a US diploma, experiencing American culture, or exploring summer opportunities — we have the perfect program for you.
+                Whether you dream of earning a diploma, experiencing North American culture, or exploring summer opportunities — we have the perfect program for you.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
                 <Link href="/about/contact" className="btn-secondary btn-lg group">
@@ -110,7 +110,7 @@ export default function StudentsPage() {
                       <GraduationCap className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <div className="font-bold text-neutral-900">4 Programs</div>
+                      <div className="font-bold text-neutral-900">Multiple Programs</div>
                       <div className="text-sm text-neutral-600">To Choose From</div>
                     </div>
                   </div>
@@ -122,7 +122,7 @@ export default function StudentsPage() {
                     </div>
                     <div>
                       <div className="font-bold text-neutral-900">Study in</div>
-                      <div className="text-sm text-neutral-600">America</div>
+                      <div className="text-sm text-neutral-600">USA & Canada</div>
                     </div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ export default function StudentsPage() {
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Choose Your Path</span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-display">Four Programs, One Goal</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-display">Find Your Perfect Program</h2>
             <p className="text-lg text-neutral-600 mt-4 max-w-2xl mx-auto">Every student is different. That&apos;s why we offer flexible programs to match your goals, timeline, and budget.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
