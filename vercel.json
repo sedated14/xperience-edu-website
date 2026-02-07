@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "j1partners.xperienceedu.com"
+        }
+      ],
+      "destination": "/j1-partners",
+      "permanent": false
+    }
+  ]
+}
