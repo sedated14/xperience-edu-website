@@ -12,6 +12,20 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/sending-organizations',
+        destination: '/partners',
+        permanent: true, // 301 redirect - preserves SEO
+      },
+      {
+        source: '/contact',
+        destination: '/about/contact',
+        permanent: true,
+      },
+    ]
+  },
   async rewrites() {
     return {
       beforeFiles: [
