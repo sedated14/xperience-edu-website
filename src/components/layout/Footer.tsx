@@ -26,7 +26,7 @@ const socialLinks = [
   { name: 'Facebook', icon: Facebook, href: '#' },
   { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/xperience_education/' },
   { name: 'X', icon: Twitter, href: 'https://x.com/Xperience_EduUS' },
-  { name: 'YouTube', icon: Youtube, href: '#' },
+  { name: 'YouTube', icon: Youtube, href: 'https://www.youtube.com/@XperienceEducation' },
 ]
 
 export function Footer() {
@@ -46,7 +46,7 @@ export function Footer() {
             </Link>
             <p className="text-neutral-400 mt-4 max-w-sm">
               Connecting international students with exceptional American high school 
-              experiences. Your gateway to F1 and J1 programs.
+              experiences since 2009. Your gateway to F1 and J1 programs.
             </p>
             <div className="flex gap-3 mt-6">
               {socialLinks.map((social) => (
