@@ -273,9 +273,14 @@ export default function HomePage() {
               <div className="mt-8"><Link href="/about" className="btn-secondary btn-lg">Learn More About Us <ArrowRight className="w-5 h-5" /></Link></div>
             </div>
             <div className="relative">
-              {/* REPLACE: Add your video or image to public/images/about-video.jpg */}
-              <div className="aspect-video bg-gradient-to-br from-primary-800 to-secondary-900 rounded-3xl flex items-center justify-center">
-                <div className="text-center text-white/80"><Play className="w-16 h-16 mx-auto mb-4" /><p>public/images/about-video.jpg</p></div>
+              <div className="aspect-video rounded-3xl overflow-hidden shadow-2xl">
+                <iframe
+                  src="https://www.youtube.com/embed/KncXv_W7IAQ"
+                  title="Xperience Education"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-secondary-500/20 rounded-full blur-2xl" />
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-accent-500/20 rounded-full blur-2xl" />
