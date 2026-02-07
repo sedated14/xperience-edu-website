@@ -1,20 +1,9 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Careers | International Student Recruitment Agent | Host Family Recruiter USA',
-  description: 'Join Xperience Education as independent contractor. US: Recruit host families for exchange students. International: Become student recruitment agent in China, Vietnam, Korea, Germany, Spain, Brazil, Japan, Mexico, Thailand & more. Flexible hours, competitive commissions.',
+  title: 'Careers | International Student Recruitment Agent | Education Consultant Jobs',
+  description: 'Join Xperience Education as international student recruitment agent. Work from China, Vietnam, Korea, Germany, Spain, Brazil, Japan, Mexico, Thailand & more. Flexible hours, competitive commissions. Recruit students for US high school programs.',
   keywords: [
-    // US - Host Family Recruiter
-    'host family recruiter job',
-    'host family recruitment USA',
-    'exchange program recruiter',
-    'education recruitment job USA',
-    'recruit host families',
-    'host family coordinator job',
-    'J1 program recruiter',
-    'cultural exchange recruiter USA',
-    'work from home education job',
-    '1099 education contractor',
     // International - Recruitment Agent General
     'international student recruitment agent',
     'education agent job',
@@ -56,8 +45,8 @@ export const metadata: Metadata = {
     '留学エージェント求人',
   ],
   openGraph: {
-    title: 'Careers | Student Recruitment Agent | Host Family Recruiter | Xperience Education',
-    description: 'Join our team. US: Recruit host families. International: Become student recruitment agent worldwide. Flexible hours, great commissions.',
+    title: 'Careers | International Student Recruitment Agent | Xperience Education',
+    description: 'Become international student recruitment agent. Work remotely from anywhere worldwide. Flexible hours, great commissions.',
     url: 'https://xperienceedu.com/careers',
   },
   alternates: {

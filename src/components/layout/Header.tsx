@@ -19,8 +19,6 @@ const navigation = [
       { name: 'Summer Programs', href: '/students/summer', description: 'USA - Summer camps & courses' },
     ],
   },
-  { name: 'Host Families', href: '/host-families' },
-  { name: 'Schools', href: '/schools' },
   { name: 'Partners', href: '/partners' },
   { name: 'Careers', href: '/careers' },
   { name: 'About', href: '/about' },

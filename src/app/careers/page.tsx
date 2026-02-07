@@ -11,13 +11,6 @@ const positions = [
     description: 'Recruit students in your country and guide them through the application process. Leverage your local network to grow placements.',
     responsibilities: ['Student recruitment & outreach', 'Application support & counseling', 'Agency partnership development', 'Local marketing & events'],
   },
-  {
-    title: 'Host Family Recruiter',
-    type: '1099 Contractor',
-    location: 'US-Based (Remote + Local)',
-    description: 'Find and qualify great host families in your community. Help match students with welcoming homes.',
-    responsibilities: ['Host family outreach & screening', 'Home visits & interviews', 'Community engagement', 'Ongoing family support'],
-  },
 ]
 
 export default function CareersPage() {
