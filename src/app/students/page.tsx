@@ -191,9 +191,12 @@ export default function StudentsPage() {
               </div>
             </div>
             <div className="relative">
-              {/* REPLACE: public/images/students-hero.jpg */}
-              <div className="aspect-square bg-gradient-to-br from-secondary-100 to-accent-100 rounded-3xl flex items-center justify-center">
-                <div className="text-center text-neutral-400"><GraduationCap className="w-20 h-20 mx-auto mb-4" /><p>public/images/students-hero.jpg</p></div>
+              <div className="aspect-square rounded-3xl overflow-hidden shadow-elevated">
+                <img 
+                  src="/images/students-experience.jpg" 
+                  alt="International students"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

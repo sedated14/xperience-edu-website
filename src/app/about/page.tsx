@@ -74,9 +74,12 @@ export default function AboutPage() {
             </div>
             <div>
               <div className="relative mb-8">
-                {/* REPLACE: public/images/team-photo.jpg */}
-                <div className="aspect-video bg-gradient-to-br from-secondary-100 to-accent-100 rounded-3xl flex items-center justify-center">
-                  <div className="text-center text-neutral-400"><Users className="w-20 h-20 mx-auto mb-4" /><p>public/images/team-photo.jpg</p></div>
+                <div className="aspect-video rounded-3xl overflow-hidden shadow-elevated">
+                  <img 
+                    src="/images/team-photo.jpg" 
+                    alt="Xperience Education team"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               <p className="text-neutral-600">Our strong partnerships with schools, sponsoring organizations, host families, and service providers allow us to create a fully supportive environment, ensuring that each student has the resources and guidance they need to thrive academically and personally.</p>
