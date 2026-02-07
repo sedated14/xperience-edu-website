@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react'
+import { Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from 'lucide-react'
 
 const footerLinks = {
   programs: [
@@ -44,7 +44,7 @@ export function Footer() {
             </Link>
             <p className="text-neutral-400 mt-4 max-w-sm">
               Connecting international students with exceptional American high school 
-              experiences since 2009. Your gateway to F1 and J1 programs.
+              experiences. Your gateway to F1 and J1 programs.
             </p>
             <div className="flex gap-3 mt-6">
               {socialLinks.map((social) => (
@@ -96,12 +96,6 @@ export function Footer() {
                 <a href="mailto:Info@XperienceEdu.com" className="flex items-center gap-2 text-neutral-400 hover:text-secondary-400 transition-colors text-sm">
                   <Mail className="w-4 h-4 flex-shrink-0" />
                   Info@XperienceEdu.com
-                </a>
-              </li>
-              <li>
-                <a href="tel:+17025550123" className="flex items-center gap-2 text-neutral-400 hover:text-secondary-400 transition-colors text-sm">
-                  <Phone className="w-4 h-4 flex-shrink-0" />
-                  +1 (702) 555-0123
                 </a>
               </li>
               <li>
