@@ -12,6 +12,22 @@ const nextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return {
+      beforeFiles: [
+        {
+          source: '/:path*',
+          has: [
+            {
+              type: 'host',
+              value: 'j1partners.xperienceedu.com',
+            },
+          ],
+          destination: '/j1-partners',
+        },
+      ],
+    }
+  },
 }
 
 module.exports = nextConfig
