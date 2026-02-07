@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { 
   ArrowRight, 
   GraduationCap, 
-  Home,
   Building2, 
   Share2, 
   Briefcase,
@@ -157,37 +156,17 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Our Services</span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 font-display">Your Journey Starts Here</h2>
-            <p className="text-lg text-neutral-600 mt-4 max-w-2xl mx-auto">Whether you&apos;re a student, host family, school, or partner — we have a path designed just for you.</p>
+            <p className="text-lg text-neutral-600 mt-4 max-w-2xl mx-auto">Whether you&apos;re a student or partner — we have a path designed just for you.</p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {/* Students — Blue hover */}
-            <Link href="/students" className="col-span-1 sm:col-span-2 row-span-2 group relative overflow-hidden rounded-3xl bg-white p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1">
+            <Link href="/students" className="col-span-1 sm:col-span-2 lg:col-span-1 lg:row-span-2 group relative overflow-hidden rounded-3xl bg-white p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1">
               <div className="absolute inset-0 bg-gradient-to-br from-secondary-600 to-secondary-800 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="w-14 h-14 bg-secondary-100 group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 transition-colors"><GraduationCap className="w-7 h-7 text-secondary-600 group-hover:text-white transition-colors" /></div>
                 <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 group-hover:text-white transition-colors">Students</h3>
                 <p className="text-neutral-600 group-hover:text-white/80 mt-2 transition-colors">F1 Visa, J1 Exchange, Short-Term &amp; Summer programs for international students</p>
                 <div className="mt-4 flex items-center text-secondary-600 group-hover:text-white font-medium transition-colors">Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" /></div>
-              </div>
-            </Link>
-            {/* Host Families — Gold hover */}
-            <Link href="/host-families" className="col-span-1 sm:col-span-2 group relative overflow-hidden rounded-3xl bg-white p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-500 to-accent-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-accent-100 group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 transition-colors"><Home className="w-7 h-7 text-accent-600 group-hover:text-white transition-colors" /></div>
-                <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 group-hover:text-white transition-colors">Host Families</h3>
-                <p className="text-neutral-600 group-hover:text-white/80 mt-2 transition-colors">Open your home to an international student</p>
-                <div className="mt-4 flex items-center text-accent-600 group-hover:text-white font-medium transition-colors">Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" /></div>
-              </div>
-            </Link>
-            {/* Schools — Charcoal hover */}
-            <Link href="/schools" className="group relative overflow-hidden rounded-3xl bg-white p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-800 to-primary-950 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-primary-100 group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 transition-colors"><Building2 className="w-7 h-7 text-primary-700 group-hover:text-white transition-colors" /></div>
-                <h3 className="text-xl font-bold text-neutral-900 group-hover:text-white transition-colors">Schools</h3>
-                <p className="text-neutral-600 group-hover:text-white/80 mt-2 transition-colors">Partner with us to welcome international students</p>
-                <div className="mt-4 flex items-center text-primary-700 group-hover:text-white font-medium transition-colors">Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" /></div>
               </div>
             </Link>
             {/* Partners — Blue hover */}
@@ -201,11 +180,11 @@ export default function HomePage() {
               </div>
             </Link>
             {/* Careers — Charcoal hover */}
-            <Link href="/careers" className="col-span-1 sm:col-span-2 group relative overflow-hidden rounded-3xl bg-white p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1">
+            <Link href="/careers" className="group relative overflow-hidden rounded-3xl bg-white p-6 sm:p-8 shadow-soft hover:shadow-elevated transition-all duration-500 hover:-translate-y-1">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-800 to-primary-950 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative z-10">
                 <div className="w-14 h-14 bg-primary-100 group-hover:bg-white/20 rounded-2xl flex items-center justify-center mb-4 transition-colors"><Briefcase className="w-7 h-7 text-primary-700 group-hover:text-white transition-colors" /></div>
-                <h3 className="text-xl sm:text-2xl font-bold text-neutral-900 group-hover:text-white transition-colors">Careers</h3>
+                <h3 className="text-xl font-bold text-neutral-900 group-hover:text-white transition-colors">Careers</h3>
                 <p className="text-neutral-600 group-hover:text-white/80 mt-2 transition-colors">Work with us as an independent agent</p>
                 <div className="mt-4 flex items-center text-primary-700 group-hover:text-white font-medium transition-colors">Learn More <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" /></div>
               </div>

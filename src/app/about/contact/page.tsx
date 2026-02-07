@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Mail, Phone, MapPin, Send, Clock, Globe, CheckCircle2 } from 'lucide-react'
+import { Mail, MapPin, Send, Clock, Globe, CheckCircle2 } from 'lucide-react'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -18,7 +18,7 @@ export default function ContactPage() {
     setError('')
 
     try {
-      const response = await fetch('https://formspree.io/f/xpqjzwbg', {
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -225,10 +225,6 @@ export default function ContactPage() {
                   <a href="mailto:Info@XperienceEdu.com" className="flex items-center gap-3 text-neutral-600 hover:text-secondary-600 transition-colors">
                     <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0"><Mail className="w-5 h-5 text-secondary-600" /></div>
                     Info@XperienceEdu.com
-                  </a>
-                  <a href="tel:+17025550123" className="flex items-center gap-3 text-neutral-600 hover:text-secondary-600 transition-colors">
-                    <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0"><Phone className="w-5 h-5 text-secondary-600" /></div>
-                    +1 (702) 555-0123
                   </a>
                   <div className="flex items-center gap-3 text-neutral-600">
                     <div className="w-10 h-10 bg-secondary-100 rounded-xl flex items-center justify-center flex-shrink-0"><MapPin className="w-5 h-5 text-secondary-600" /></div>
