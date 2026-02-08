@@ -21,6 +21,7 @@ const navigation = [
   },
   { name: 'Partners', href: '/partners' },
   { name: 'Careers', href: '/careers' },
+  { name: 'Blog', href: '/blog' },
   { name: 'About', href: '/about' },
 ]
 
