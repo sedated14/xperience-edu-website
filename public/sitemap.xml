@@ -46,11 +46,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://xperienceedu.com/j1-partners</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://xperienceedu.com/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

@@ -1,10 +1,11 @@
-# Robots.txt for xperienceedu.com
+# Robots.txt for xperienceedu.com and xperience-education.com
 
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Sitemaps
 Sitemap: https://xperienceedu.com/sitemap.xml
+Sitemap: https://xperience-education.com/sitemap-j1.xml
 
 # Block admin/api routes (if any)
 Disallow: /api/
