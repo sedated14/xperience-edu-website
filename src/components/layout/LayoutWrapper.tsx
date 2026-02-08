@@ -13,10 +13,11 @@ export function LayoutWrapper({ children }: { children: React.ReactNode }) {
   const [isStandalone, setIsStandalone] = useState(false)
 
   useEffect(() => {
-    // Check if it's a standalone route OR the j1partners subdomain
+    // Check if it's a standalone route OR the j1partners subdomain OR xperience-education.com
     const isStandaloneRoute = standaloneRoutes.some(route => pathname?.startsWith(route))
     const isJ1Subdomain = typeof window !== 'undefined' && window.location.hostname.startsWith('j1partners.')
-    setIsStandalone(isStandaloneRoute || isJ1Subdomain)
+    const isJ1Domain = typeof window !== 'undefined' && window.location.hostname.includes('xperience-education.com')
+    setIsStandalone(isStandaloneRoute || isJ1Subdomain || isJ1Domain)
   }, [pathname])
 
   if (isStandalone) {

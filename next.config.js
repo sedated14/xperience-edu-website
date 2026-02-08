@@ -48,6 +48,26 @@ const nextConfig = {
           ],
           destination: '/j1-partners',
         },
+        {
+          source: '/',
+          has: [
+            {
+              type: 'host',
+              value: 'xperience-education.com',
+            },
+          ],
+          destination: '/j1-partners',
+        },
+        {
+          source: '/',
+          has: [
+            {
+              type: 'host',
+              value: 'www.xperience-education.com',
+            },
+          ],
+          destination: '/j1-partners',
+        },
       ],
     }
   },
