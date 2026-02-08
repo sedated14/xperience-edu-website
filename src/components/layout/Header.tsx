@@ -156,9 +156,10 @@ export function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2 text-sm text-neutral-500 rounded-lg hover:bg-neutral-50 hover:text-neutral-700 transition-colors"
+                        className="block px-4 py-2 rounded-lg hover:bg-neutral-50 transition-colors"
                       >
-                        {child.name}
+                        <span className="text-sm text-neutral-700 font-medium">{child.name}</span>
+                        <span className="block text-xs text-neutral-400 mt-0.5">{child.description}</span>
                       </Link>
                     ))}
                   </div>

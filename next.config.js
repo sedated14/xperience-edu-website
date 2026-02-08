@@ -28,6 +28,11 @@ const nextConfig = {
         destination: '/about/contact',
         permanent: true,
       },
+      {
+        source: '/StudyInTheUSA',
+        destination: '/students/j1-exchange',
+        permanent: true,
+      },
     ]
   },
   async rewrites() {
