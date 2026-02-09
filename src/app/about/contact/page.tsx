@@ -69,13 +69,6 @@ export default function ContactPage() {
               <p className="text-lg text-white/80 mt-6 max-w-2xl mx-auto lg:mx-0">
                 Have questions about our programs? Ready to apply? Our team responds within 24 hours.
               </p>
-              
-              {/* Mobile Hero Image - In flow with overlap */}
-              <div className="lg:hidden mt-12 flex justify-center">
-                <div className="relative z-30 w-56 h-56 sm:w-64 sm:h-64 rounded-3xl translate-y-16 overflow-hidden shadow-2xl border-4 border-white">
-                  <img src="/images/contact-hero.jpg" alt="Friendly consultation" className="w-full h-full object-cover" />
-                </div>
-              </div>
             </div>
             <div className="relative hidden lg:block">
               <div className="relative aspect-square max-w-lg mx-auto">
@@ -114,8 +107,15 @@ export default function ContactPage() {
         </div>
       </section>
 
+      {/* Mobile Overlapping Hero Image */}
+      <div className="lg:hidden relative z-20 flex justify-center -mt-8 -mb-24">
+        <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="/images/contact-hero.jpg" alt="Friendly consultation" className="w-full h-full object-cover" />
+        </div>
+      </div>
+
       {/* CONTACT FORM + INFO */}
-      <section className="section bg-neutral-50 relative z-0 pt-20 sm:pt-24 lg:pt-16">
+      <section className="section bg-neutral-50 pt-32 sm:pt-36 lg:pt-16">
         <div className="container-wide">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Form */}

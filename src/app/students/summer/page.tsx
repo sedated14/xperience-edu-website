@@ -33,13 +33,6 @@ export default function SummerPage() {
                 <Link href="/about/contact" className="btn bg-amber-600 text-white hover:bg-amber-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#programs" className="btn-ghost btn-lg">View Programs</Link>
               </div>
-              
-              {/* Mobile Hero Image - In flow with overlap */}
-              <div className="lg:hidden mt-12 flex justify-center">
-                <div className="relative z-30 w-56 h-56 sm:w-64 sm:h-64 rounded-3xl translate-y-16 overflow-hidden shadow-2xl border-4 border-white">
-                  <img src="/images/summer-hero.jpg" alt="Students enjoying summer camp activities" className="w-full h-full object-cover" />
-                </div>
-              </div>
             </div>
             <div className="relative hidden lg:block">
               <div className="relative aspect-square max-w-lg mx-auto">
@@ -78,8 +71,15 @@ export default function SummerPage() {
         </div>
       </section>
 
+      {/* Mobile Overlapping Hero Image */}
+      <div className="lg:hidden relative z-20 flex justify-center -mt-8 -mb-24">
+        <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="/images/summer-hero.jpg" alt="Students enjoying summer camp activities" className="w-full h-full object-cover" />
+        </div>
+      </div>
+
       {/* PROGRAM TYPES */}
-      <section id="programs" className="section bg-neutral-50 relative z-0 pt-20 sm:pt-24 lg:pt-16">
+      <section id="programs" className="section bg-neutral-50 pt-32 sm:pt-36 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-amber-100 text-amber-700 rounded-full text-sm font-medium mb-4">Summer Options</span>

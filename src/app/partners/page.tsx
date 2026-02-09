@@ -33,13 +33,6 @@ export default function PartnersPage() {
                 <Link href="/about/contact" className="btn-secondary btn-lg group">Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#benefits" className="btn-ghost btn-lg">Learn More</Link>
               </div>
-              
-              {/* Mobile Hero Image - In flow with overlap */}
-              <div className="lg:hidden mt-12 flex justify-center">
-                <div className="relative z-30 w-56 h-56 sm:w-64 sm:h-64 rounded-3xl translate-y-16 overflow-hidden shadow-2xl border-4 border-white">
-                  <img src="/images/partners-hero.jpg" alt="Global partnership meeting" className="w-full h-full object-cover" />
-                </div>
-              </div>
             </div>
             <div className="relative hidden lg:block">
               <div className="relative aspect-square max-w-lg mx-auto">
@@ -78,8 +71,15 @@ export default function PartnersPage() {
         </div>
       </section>
 
+      {/* Mobile Overlapping Hero Image */}
+      <div className="lg:hidden relative z-20 flex justify-center -mt-8 -mb-24">
+        <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="/images/partners-hero.jpg" alt="Global partnership meeting" className="w-full h-full object-cover" />
+        </div>
+      </div>
+
       {/* WHY PARTNER */}
-      <section id="benefits" className="section bg-neutral-50 relative z-0 pt-20 sm:pt-24 lg:pt-16">
+      <section id="benefits" className="section bg-neutral-50 pt-32 sm:pt-36 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Why Partner With Us</span>
