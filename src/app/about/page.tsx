@@ -7,7 +7,7 @@ export default function AboutPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-visible">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
         {/* Mobile Hero Background */}
         <div className="absolute inset-0 lg:hidden">
           <img src="/images/about-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
@@ -29,6 +29,13 @@ export default function AboutPage() {
               <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl mx-auto lg:mx-0">
                 At Xperience Education, we are dedicated to fostering global education opportunities for international students.
               </p>
+              
+              {/* Mobile Hero Image - In flow with overlap */}
+              <div className="lg:hidden mt-12 -mb-32 relative z-20 flex justify-center">
+                <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                  <img src="/images/about-hero.jpg" alt="Xperience Education team" className="w-full h-full object-cover" />
+                </div>
+              </div>
             </div>
             <div className="relative hidden lg:block">
               <div className="relative aspect-square max-w-lg mx-auto">
@@ -65,17 +72,10 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-        
-        {/* Mobile Overlapping Hero Image */}
-        <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-            <img src="/images/about-hero.jpg" alt="Xperience Education team" className="w-full h-full object-cover" />
-          </div>
-        </div>
       </section>
 
       {/* OUR STORY */}
-      <section className="section bg-white pt-36 sm:pt-40 lg:pt-16">
+      <section className="section bg-white pt-24 lg:pt-16">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>

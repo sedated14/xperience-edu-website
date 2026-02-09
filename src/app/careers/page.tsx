@@ -17,7 +17,7 @@ export default function CareersPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-visible">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
         {/* Mobile Hero Background */}
         <div className="absolute inset-0 lg:hidden">
           <img src="/images/careers-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
@@ -41,6 +41,13 @@ export default function CareersPage() {
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
                 <Link href="#positions" className="btn-secondary btn-lg group">View Open Positions <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+              </div>
+              
+              {/* Mobile Hero Image - In flow with overlap */}
+              <div className="lg:hidden mt-12 -mb-32 relative z-20 flex justify-center">
+                <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                  <img src="/images/careers-hero.jpg" alt="Team collaboration in education" className="w-full h-full object-cover" />
+                </div>
               </div>
             </div>
             <div className="relative hidden lg:block">
@@ -78,17 +85,10 @@ export default function CareersPage() {
             </div>
           </div>
         </div>
-        
-        {/* Mobile Overlapping Hero Image */}
-        <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-            <img src="/images/careers-hero.jpg" alt="Team collaboration in education" className="w-full h-full object-cover" />
-          </div>
-        </div>
       </section>
 
       {/* WHY WORK WITH US */}
-      <section className="section bg-neutral-50 pt-36 sm:pt-40 lg:pt-16">
+      <section className="section bg-neutral-50 pt-24 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Why Join Us</span>

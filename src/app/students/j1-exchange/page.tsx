@@ -18,7 +18,7 @@ export default function J1ExchangePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-visible">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
         {/* Mobile Hero Background */}
         <div className="absolute inset-0 lg:hidden">
           <img src="/images/j1-exchange-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
@@ -43,6 +43,13 @@ export default function J1ExchangePage() {
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
                 <Link href="/about/contact" className="btn bg-emerald-600 text-white hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#comparison" className="btn-ghost btn-lg">J1 vs F1 Comparison</Link>
+              </div>
+              
+              {/* Mobile Hero Image - In flow with overlap */}
+              <div className="lg:hidden mt-12 -mb-32 relative z-20 flex justify-center">
+                <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                  <img src="/images/j1-exchange-hero.jpg" alt="J1 exchange student with host family" className="w-full h-full object-cover" />
+                </div>
               </div>
             </div>
             <div className="relative hidden lg:block">
@@ -80,17 +87,10 @@ export default function J1ExchangePage() {
             </div>
           </div>
         </div>
-        
-        {/* Mobile Overlapping Hero Image */}
-        <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-            <img src="/images/j1-exchange-hero.jpg" alt="J1 exchange student with host family" className="w-full h-full object-cover" />
-          </div>
-        </div>
       </section>
 
       {/* WHAT MAKES J1 SPECIAL */}
-      <section className="section bg-neutral-50 pt-36 sm:pt-40 lg:pt-16">
+      <section className="section bg-neutral-50 pt-24 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">The J1 Experience</span>

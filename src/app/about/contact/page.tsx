@@ -48,7 +48,7 @@ export default function ContactPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 hero-gradient overflow-visible">
+      <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 hero-gradient overflow-hidden">
         {/* Mobile Hero Background */}
         <div className="absolute inset-0 lg:hidden">
           <img src="/images/contact-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
@@ -69,6 +69,13 @@ export default function ContactPage() {
               <p className="text-lg text-white/80 mt-6 max-w-2xl mx-auto lg:mx-0">
                 Have questions about our programs? Ready to apply? Our team responds within 24 hours.
               </p>
+              
+              {/* Mobile Hero Image - In flow with overlap */}
+              <div className="lg:hidden mt-12 -mb-32 relative z-20 flex justify-center">
+                <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                  <img src="/images/contact-hero.jpg" alt="Friendly consultation" className="w-full h-full object-cover" />
+                </div>
+              </div>
             </div>
             <div className="relative hidden lg:block">
               <div className="relative aspect-square max-w-lg mx-auto">
@@ -105,17 +112,10 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        
-        {/* Mobile Overlapping Hero Image */}
-        <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
-          <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-            <img src="/images/contact-hero.jpg" alt="Friendly consultation" className="w-full h-full object-cover" />
-          </div>
-        </div>
       </section>
 
       {/* CONTACT FORM + INFO */}
-      <section className="section bg-neutral-50 pt-36 sm:pt-40 lg:pt-16">
+      <section className="section bg-neutral-50 pt-24 lg:pt-16">
         <div className="container-wide">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Form */}
