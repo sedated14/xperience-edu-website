@@ -19,11 +19,22 @@ export default function J1ExchangePage() {
     <>
       {/* HERO */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
+        {/* Mobile Hero Background */}
+        <div className="absolute inset-0 lg:hidden">
+          <img src="/images/j1-exchange-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
+        </div>
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0 bg-dots-pattern" /></div>
         <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl floating" />
         <div className="container-wide relative z-10">
+          {/* Mobile Hero Image */}
+          <div className="lg:hidden mb-8 flex justify-center">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
+              <img src="/images/j1-exchange-hero.jpg" alt="J1 exchange student with host family" className="w-full h-full object-cover" />
+            </div>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/20 backdrop-blur-sm rounded-full text-emerald-300 text-sm mb-6">
                 <Globe className="w-4 h-4" />
                 J1 Exchange Program
@@ -32,10 +43,10 @@ export default function J1ExchangePage() {
                 Experience America
                 <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-emerald-400 to-accent-400 pb-2">Like a Local</span>
               </h1>
-              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
+              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl mx-auto lg:mx-0">
                 Live with an American host family, attend a public high school, and immerse yourself in US culture for a semester or full year.
               </p>
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
                 <Link href="/about/contact" className="btn bg-emerald-600 text-white hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#comparison" className="btn-ghost btn-lg">J1 vs F1 Comparison</Link>
               </div>

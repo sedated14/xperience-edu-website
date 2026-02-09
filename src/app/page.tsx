@@ -54,6 +54,16 @@ export default function HomePage() {
     <>
       {/* HERO — Dark charcoal matching logo */}
       <section className="relative min-h-screen flex items-center hero-gradient overflow-hidden">
+        {/* Mobile Hero Image Background */}
+        <div className="absolute inset-0 lg:hidden">
+          <img
+            src="/images/hero-students.jpg"
+            alt=""
+            className="w-full h-full object-cover opacity-20"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
+        </div>
+        
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-dots-pattern" />
         </div>
@@ -61,6 +71,17 @@ export default function HomePage() {
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed" />
 
         <div className="container-wide relative z-10 py-32">
+          {/* Mobile Hero Image - Visible Card */}
+          <div className="lg:hidden mb-8 flex justify-center animate-fade-in">
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
+              <img
+                src="/images/hero-students.jpg"
+                alt="International students on an American campus"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm mb-6 animate-fade-down">

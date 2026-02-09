@@ -8,11 +8,22 @@ export default function VirtualHighSchoolPage() {
     <>
       {/* HERO */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
+        {/* Mobile Hero Background */}
+        <div className="absolute inset-0 lg:hidden">
+          <img src="/images/virtual-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
+        </div>
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0 bg-dots-pattern" /></div>
         <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl floating" />
         <div className="container-wide relative z-10">
+          {/* Mobile Hero Image */}
+          <div className="lg:hidden mb-8 flex justify-center">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
+              <img src="/images/virtual-hero.jpg" alt="Student learning online" className="w-full h-full object-cover" />
+            </div>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-500/20 backdrop-blur-sm rounded-full text-indigo-300 text-sm mb-6">
                 <Monitor className="w-4 h-4" />
                 Virtual High School Program
@@ -21,10 +32,10 @@ export default function VirtualHighSchoolPage() {
                 Earn a U.S. Diploma
                 <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-accent-400 pb-2">From Anywhere</span>
               </h1>
-              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
+              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl mx-auto lg:mx-0">
                 A flexible, affordable, and accessible way for international students to achieve a U.S. high school diploma online — study anytime, anywhere, at your own pace.
               </p>
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
                 <Link href="/about/contact" className="btn bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#benefits" className="btn-ghost btn-lg">Learn More</Link>
               </div>

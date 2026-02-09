@@ -71,12 +71,23 @@ export default function StudentsPage() {
     <>
       {/* HERO */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
+        {/* Mobile Hero Background */}
+        <div className="absolute inset-0 lg:hidden">
+          <img src="/images/students-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
+        </div>
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0 bg-dots-pattern" /></div>
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating" />
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed" />
         <div className="container-wide relative z-10">
+          {/* Mobile Hero Image */}
+          <div className="lg:hidden mb-8 flex justify-center">
+            <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
+              <img src="/images/students-hero.jpg" alt="International students on American campus" className="w-full h-full object-cover" />
+            </div>
+          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-500/20 backdrop-blur-sm rounded-full text-secondary-300 text-sm mb-6">
                 <GraduationCap className="w-4 h-4" />
                 Student Programs
@@ -85,10 +96,10 @@ export default function StudentsPage() {
                 Your International Education
                 <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Starts Here</span>
               </h1>
-              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl">
+              <p className="text-lg sm:text-xl text-white/80 mt-6 max-w-2xl mx-auto lg:mx-0">
                 Whether you dream of earning a diploma, experiencing North American culture, or exploring summer opportunities — we have the perfect program for you.
               </p>
-              <div className="flex flex-wrap gap-4 mt-8">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
                 <Link href="/about/contact" className="btn-secondary btn-lg group">
                   Get Started Today <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
