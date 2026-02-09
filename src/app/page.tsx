@@ -53,9 +53,9 @@ export default function HomePage() {
   return (
     <>
       {/* HERO — Dark charcoal matching logo */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 lg:min-h-screen lg:flex lg:items-center hero-gradient">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 lg:min-h-screen lg:flex lg:items-center hero-gradient overflow-hidden">
         {/* Mobile Hero Image Background */}
-        <div className="absolute inset-0 lg:hidden">
+        <div className="absolute inset-0 lg:hidden z-0">
           <img
             src="/images/hero-students.jpg"
             alt=""
@@ -64,11 +64,11 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
         </div>
         
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-10 z-0">
           <div className="absolute inset-0 bg-dots-pattern" />
         </div>
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed" />
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating z-0" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed z-0" />
 
         <div className="container-wide relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
