@@ -70,7 +70,7 @@ export default function CanadaPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-hidden">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-28 hero-gradient overflow-visible">
         {/* Mobile Hero Background */}
         <div className="absolute inset-0 lg:hidden">
           <img src="/images/canada-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
@@ -79,12 +79,6 @@ export default function CanadaPage() {
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0 bg-dots-pattern" /></div>
         <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-red-500/10 rounded-full blur-3xl floating" />
         <div className="container-wide relative z-10">
-          {/* Mobile Hero Image */}
-          <div className="lg:hidden mb-8 flex justify-center">
-            <div className="relative w-48 h-48 sm:w-56 sm:h-56 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
-              <img src="/images/canada-hero.jpg" alt="Students in Canada" className="w-full h-full object-cover" />
-            </div>
-          </div>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/20 backdrop-blur-sm rounded-full text-red-300 text-sm mb-6">
@@ -138,10 +132,17 @@ export default function CanadaPage() {
             </div>
           </div>
         </div>
+        
+        {/* Mobile Overlapping Hero Image */}
+        <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="/images/canada-hero.jpg" alt="Students in Canada" className="w-full h-full object-cover" />
+          </div>
+        </div>
       </section>
 
       {/* PROGRAMS */}
-      <section id="programs" className="section bg-neutral-50">
+      <section id="programs" className="section bg-neutral-50 pt-36 sm:pt-40 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-red-100 text-red-700 rounded-full text-sm font-medium mb-4">Our Programs</span>

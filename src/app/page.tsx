@@ -53,7 +53,7 @@ export default function HomePage() {
   return (
     <>
       {/* HERO — Dark charcoal matching logo */}
-      <section className="relative min-h-screen flex items-center hero-gradient overflow-hidden">
+      <section className="relative min-h-screen flex items-center hero-gradient overflow-visible">
         {/* Mobile Hero Image Background */}
         <div className="absolute inset-0 lg:hidden">
           <img
@@ -70,18 +70,7 @@ export default function HomePage() {
         <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating" />
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed" />
 
-        <div className="container-wide relative z-10 py-32">
-          {/* Mobile Hero Image - Visible Card */}
-          <div className="lg:hidden mb-8 flex justify-center animate-fade-in">
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
-              <img
-                src="/images/hero-students.jpg"
-                alt="International students on an American campus"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          
+        <div className="container-wide relative z-10 py-32 pb-40 lg:pb-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm mb-6 animate-fade-down">
@@ -110,7 +99,7 @@ export default function HomePage() {
                   Watch Our Story
                 </Link>
               </div>
-              <div className="mt-12 pt-8 border-t border-white/10 animate-fade-up animation-delay-600">
+              <div className="hidden lg:block mt-12 pt-8 border-t border-white/10 animate-fade-up animation-delay-600">
                 <p className="text-white/60 text-sm mb-4">Part of a Growing Global Network</p>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-6">
                   <div className="text-center">
@@ -169,10 +158,21 @@ export default function HomePage() {
             <div className="w-1 h-3 bg-white/60 rounded-full" />
           </div>
         </div>
+        
+        {/* Mobile Overlapping Hero Image */}
+        <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
+          <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img
+              src="/images/hero-students.jpg"
+              alt="International students on an American campus"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
       </section>
 
       {/* FIVE PILLARS BENTO GRID */}
-      <section className="section bg-neutral-50">
+      <section className="section bg-neutral-50 pt-44 sm:pt-48 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Our Services</span>

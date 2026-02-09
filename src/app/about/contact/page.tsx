@@ -48,11 +48,16 @@ export default function ContactPage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 hero-gradient overflow-hidden">
+      <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-20 hero-gradient overflow-visible">
+        {/* Mobile Hero Background */}
+        <div className="absolute inset-0 lg:hidden">
+          <img src="/images/contact-hero.jpg" alt="" className="w-full h-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
+        </div>
         <div className="absolute inset-0 opacity-10"><div className="absolute inset-0 bg-dots-pattern" /></div>
         <div className="container-wide relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary-500/20 backdrop-blur-sm rounded-full text-secondary-300 text-sm mb-6">
                 <Mail className="w-4 h-4" />
                 Get in Touch
@@ -61,7 +66,7 @@ export default function ContactPage() {
                 Let&apos;s Start a
                 <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-secondary-400 to-accent-400 pb-2">Conversation</span>
               </h1>
-              <p className="text-lg text-white/80 mt-6 max-w-2xl">
+              <p className="text-lg text-white/80 mt-6 max-w-2xl mx-auto lg:mx-0">
                 Have questions about our programs? Ready to apply? Our team responds within 24 hours.
               </p>
             </div>
@@ -100,10 +105,17 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+        
+        {/* Mobile Overlapping Hero Image */}
+        <div className="lg:hidden absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-20">
+          <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <img src="/images/contact-hero.jpg" alt="Friendly consultation" className="w-full h-full object-cover" />
+          </div>
+        </div>
       </section>
 
       {/* CONTACT FORM + INFO */}
-      <section className="section bg-neutral-50">
+      <section className="section bg-neutral-50 pt-36 sm:pt-40 lg:pt-16">
         <div className="container-wide">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Form */}
