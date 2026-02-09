@@ -55,7 +55,7 @@ export default function HomePage() {
       {/* HERO — Dark charcoal matching logo */}
       <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 lg:min-h-screen lg:flex lg:items-center hero-gradient">
         {/* Mobile Hero Image Background */}
-        <div className="absolute inset-0 lg:hidden -z-10">
+        <div className="absolute inset-0 lg:hidden">
           <img
             src="/images/hero-students.jpg"
             alt=""
@@ -64,13 +64,13 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
         </div>
         
-        <div className="absolute inset-0 opacity-10 -z-10">
+        <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-dots-pattern" />
         </div>
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating -z-10" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed -z-10" />
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed" />
 
-        <div className="container-wide relative">
+        <div className="container-wide relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm mb-6 animate-fade-down">
@@ -98,17 +98,6 @@ export default function HomePage() {
                   <Play className="w-5 h-5" />
                   Watch Our Story
                 </Link>
-              </div>
-              
-              {/* Mobile Hero Image - Overlaps both sections */}
-              <div className="lg:hidden mt-12 flex justify-center">
-                <div className="relative z-30 w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white translate-y-16">
-                  <img
-                    src="/images/hero-students.jpg"
-                    alt="International students on an American campus"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
               
               <div className="hidden lg:block mt-12 pt-8 border-t border-white/10 animate-fade-up animation-delay-600">
@@ -172,8 +161,19 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Mobile Overlapping Hero Image - Sits between sections */}
+      <div className="lg:hidden relative z-20 flex justify-center -mt-8 -mb-24">
+        <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img
+            src="/images/hero-students.jpg"
+            alt="International students on an American campus"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
       {/* FIVE PILLARS BENTO GRID */}
-      <section className="section bg-neutral-50 relative z-0 pt-20 sm:pt-24 lg:pt-16">
+      <section className="section bg-neutral-50 pt-32 sm:pt-36 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Our Services</span>
