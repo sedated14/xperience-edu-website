@@ -53,9 +53,9 @@ export default function HomePage() {
   return (
     <>
       {/* HERO — Dark charcoal matching logo */}
-      <section className="relative min-h-screen flex items-center hero-gradient overflow-visible">
+      <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 lg:min-h-screen lg:flex lg:items-center hero-gradient">
         {/* Mobile Hero Image Background */}
-        <div className="absolute inset-0 lg:hidden">
+        <div className="absolute inset-0 lg:hidden -z-10">
           <img
             src="/images/hero-students.jpg"
             alt=""
@@ -64,28 +64,28 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-b from-primary-950/80 via-primary-950/90 to-primary-950" />
         </div>
         
-        <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 opacity-10 -z-10">
           <div className="absolute inset-0 bg-dots-pattern" />
         </div>
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating" />
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed" />
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary-500/10 rounded-full blur-3xl floating -z-10" />
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl floating-delayed -z-10" />
 
-        <div className="container-wide relative z-10 py-32">
+        <div className="container-wide relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm mb-6 animate-fade-down">
                 <Globe className="w-4 h-4" />
                 Connecting Students to Their American Dream
               </div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight font-display animate-fade-up overflow-visible">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight font-display animate-fade-up">
                 Your Gateway to
-                <span className="block overflow-visible">
+                <span className="block">
                   <RotatingText 
                     words={['F1 Visa Programs', 'J1 Exchange Programs', 'Summer Programs', 'Short-Term Programs', 'US High School Education']} 
                   />
                 </span>
               </h1>
-              <p className="text-lg sm:text-xl text-white/80 mt-2 max-w-xl mx-auto lg:mx-0 animate-fade-up animation-delay-200">
+              <p className="text-lg sm:text-xl text-white/80 mt-4 max-w-xl mx-auto lg:mx-0 animate-fade-up animation-delay-200">
                 F1 Visa, J1 Exchange, Short-Term, and Summer Programs. 
                 Start your international education journey with a trusted partner.
               </p>
@@ -100,9 +100,9 @@ export default function HomePage() {
                 </Link>
               </div>
               
-              {/* Mobile Hero Image - In flow with overlap */}
-              <div className="lg:hidden mt-12 -mb-32 relative z-20 flex justify-center">
-                <div className="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              {/* Mobile Hero Image - Overlaps both sections */}
+              <div className="lg:hidden mt-12 flex justify-center">
+                <div className="relative z-30 w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white translate-y-16">
                   <img
                     src="/images/hero-students.jpg"
                     alt="International students on an American campus"
@@ -173,7 +173,7 @@ export default function HomePage() {
       </section>
 
       {/* FIVE PILLARS BENTO GRID */}
-      <section className="section bg-neutral-50 pt-24 lg:pt-16">
+      <section className="section bg-neutral-50 relative z-0 pt-20 sm:pt-24 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium mb-4">Our Services</span>

@@ -31,8 +31,8 @@ export default function AboutPage() {
               </p>
               
               {/* Mobile Hero Image - In flow with overlap */}
-              <div className="lg:hidden mt-12 -mb-32 relative z-20 flex justify-center">
-                <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              <div className="lg:hidden mt-12 flex justify-center">
+                <div className="relative z-30 w-56 h-56 sm:w-64 sm:h-64 rounded-3xl translate-y-16 overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/images/about-hero.jpg" alt="Xperience Education team" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
       </section>
 
       {/* OUR STORY */}
-      <section className="section bg-white pt-24 lg:pt-16">
+      <section className="section bg-white relative z-0 pt-20 sm:pt-24 lg:pt-16">
         <div className="container-wide">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>

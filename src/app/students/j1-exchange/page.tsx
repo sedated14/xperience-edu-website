@@ -46,8 +46,8 @@ export default function J1ExchangePage() {
               </div>
               
               {/* Mobile Hero Image - In flow with overlap */}
-              <div className="lg:hidden mt-12 -mb-32 relative z-20 flex justify-center">
-                <div className="relative w-56 h-56 sm:w-64 sm:h-64 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+              <div className="lg:hidden mt-12 flex justify-center">
+                <div className="relative z-30 w-56 h-56 sm:w-64 sm:h-64 rounded-3xl translate-y-16 overflow-hidden shadow-2xl border-4 border-white">
                   <img src="/images/j1-exchange-hero.jpg" alt="J1 exchange student with host family" className="w-full h-full object-cover" />
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function J1ExchangePage() {
       </section>
 
       {/* WHAT MAKES J1 SPECIAL */}
-      <section className="section bg-neutral-50 pt-24 lg:pt-16">
+      <section className="section bg-neutral-50 relative z-0 pt-20 sm:pt-24 lg:pt-16">
         <div className="container-wide">
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">The J1 Experience</span>
