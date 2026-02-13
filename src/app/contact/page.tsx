@@ -33,22 +33,9 @@ export default function ContactPage() {
     setIsSubmitting(true)
     setError('')
 
-    // ============================================
-    // IMPORTANT: Replace 'YOUR_FORM_ID' with your actual Formspree form ID
-    // Get one free at https://formspree.io
-    // ============================================
     const FORMSPREE_ID = 'xpqjzwbg'
 
     try {
-      // If Formspree ID is not configured, simulate success for testing
-      if (FORMSPREE_ID === 'YOUR_FORM_ID') {
-        await new Promise(resolve => setTimeout(resolve, 1500))
-        console.log('Form submitted (TEST MODE):', formData)
-        setIsSubmitted(true)
-        setFormData({ name: '', email: '', phone: '', type: '', message: '' })
-        return
-      }
-
       const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
         headers: {

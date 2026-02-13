@@ -107,29 +107,9 @@ export default function StudentAssessmentPage() {
     setIsSubmitting(true)
     setError('')
 
-    // ============================================
-    // IMPORTANT: Replace 'YOUR_FORM_ID' with your actual Formspree form ID
-    // Get one free at https://formspree.io
-    // ============================================
     const FORMSPREE_ID = 'xdalelyo'
 
     try {
-      // If Formspree ID is not configured, simulate success for testing
-      if (FORMSPREE_ID === 'YOUR_FORM_ID') {
-        // Simulate network delay for testing
-        await new Promise(resolve => setTimeout(resolve, 1500))
-        console.log('Form submitted (TEST MODE):', formData)
-        setIsSubmitted(true)
-        setFormData({
-          firstName: '', middleName: '', lastName: '', age: '', currentGrade: '',
-          hasGraduated: '', englishLevel: [], gender: '', nationality: '',
-          countryOfResidence: '', email: '', phone: '', whatsapp: '',
-          interestedPrograms: [], programDuration: [], requestedGrade: '',
-          seekingGraduation: '', desiredStartDate: '', preferredComm: '',
-        })
-        return
-      }
-
       const response = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
         method: 'POST',
         headers: {
