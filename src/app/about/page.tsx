@@ -155,7 +155,7 @@ export default function AboutPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Want to Learn More?</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">We&apos;d love to hear from you. Reach out and let&apos;s start a conversation.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Contact Us <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Contact Us <ArrowRight className="w-5 h-5" /></Link>
             <Link href="/students" className="btn-ghost btn-lg">Explore Programs</Link>
           </div>
         </div>

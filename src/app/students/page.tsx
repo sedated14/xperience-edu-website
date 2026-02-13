@@ -94,7 +94,7 @@ export default function StudentsPage() {
                 Whether you dream of earning a diploma, experiencing North American culture, or exploring summer opportunities — we have the perfect program for you.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Link href="/about/contact" className="btn-secondary btn-lg group">
+                <Link href="/student-assessment#form" className="btn-secondary btn-lg group">
                   Get Started Today <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <Link href="#programs" className="btn-ghost btn-lg">Explore Programs</Link>
@@ -232,8 +232,8 @@ export default function StudentsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Ready to Begin Your Journey?</h2>
           <p className="text-lg sm:text-xl text-white/80 mt-4 max-w-2xl mx-auto">Our admissions team is ready to help you find the perfect program. Get started today.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
-            <Link href="/about/contact" className="btn-ghost btn-lg">Talk to an Advisor</Link>
+            <Link href="/student-assessment#form" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/contact" className="btn-ghost btn-lg">Talk to an Advisor</Link>
           </div>
         </div>
       </section>

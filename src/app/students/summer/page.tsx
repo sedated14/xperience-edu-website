@@ -30,7 +30,7 @@ export default function SummerPage() {
                 Academic courses, summer camps, STEM programs, and more. Spend your summer learning, growing, and exploring the US.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Link href="/about/contact" className="btn bg-amber-600 text-white hover:bg-amber-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/student-assessment" className="btn bg-amber-600 text-white hover:bg-amber-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#programs" className="btn-ghost btn-lg">View Programs</Link>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function SummerPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Don&apos;t Miss This Summer</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Programs fill up fast. Apply early to secure your spot for this summer&apos;s sessions.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/student-assessment" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
             <Link href="/students" className="btn-ghost btn-lg">View All Programs</Link>
           </div>
         </div>

@@ -24,9 +24,14 @@ const nextConfig = {
         permanent: true, // 301 redirect - preserves SEO
       },
       {
-        source: '/contact',
-        destination: '/about/contact',
-        permanent: true,
+        source: '/about/contact',
+        destination: '/contact',
+        permanent: true, // 301 redirect - preserves old SEO rankings
+      },
+      {
+        source: '/host-an-international-student',
+        destination: '/host-families',
+        permanent: true, // 301 redirect - preserves old SEO rankings
       },
       {
         source: '/StudyInTheUSA',

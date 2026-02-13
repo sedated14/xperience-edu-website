@@ -109,9 +109,20 @@ export function Header() {
         </nav>
 
         {/* CTA + Mobile Menu */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3">
           <Link
-            href="/about/contact"
+            href="/contact"
+            className={cn(
+              'hidden sm:inline-flex btn text-sm',
+              isScrolled
+                ? 'bg-transparent text-neutral-600 hover:text-secondary-600'
+                : 'bg-transparent text-white/80 hover:text-white'
+            )}
+          >
+            Contact
+          </Link>
+          <Link
+            href="/student-assessment#form"
             className={cn(
               'hidden sm:inline-flex btn text-sm',
               isScrolled
@@ -119,7 +130,7 @@ export function Header() {
                 : 'bg-white text-primary-900 hover:bg-white/90'
             )}
           >
-            Contact Us
+            Apply Now
           </Link>
 
           {/* Mobile Menu Button */}
@@ -166,9 +177,12 @@ export function Header() {
                 )}
               </div>
             ))}
-            <div className="pt-2">
-              <Link href="/about/contact" className="block w-full text-center btn bg-secondary-600 text-white hover:bg-secondary-700">
+            <div className="pt-2 space-y-2">
+              <Link href="/contact" className="block w-full text-center btn bg-neutral-100 text-neutral-700 hover:bg-neutral-200">
                 Contact Us
+              </Link>
+              <Link href="/student-assessment#form" className="block w-full text-center btn bg-secondary-600 text-white hover:bg-secondary-700">
+                Apply Now
               </Link>
             </div>
           </div>

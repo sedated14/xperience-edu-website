@@ -30,7 +30,7 @@ export default function PartnersPage() {
                 Represent Xperience Education in your country. Send students to top US programs and grow your agency with our proven support system.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Link href="/about/contact" className="btn-secondary btn-lg group">Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/contact" className="btn-secondary btn-lg group">Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#benefits" className="btn-ghost btn-lg">Learn More</Link>
               </div>
             </div>
@@ -136,8 +136,8 @@ export default function PartnersPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Ready to Join Our Network?</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">We work with agencies worldwide through our proven sponsor networks. Let&apos;s discuss how we can grow together.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
-            <Link href="/about/contact" className="btn-ghost btn-lg">Schedule a Call</Link>
+            <Link href="/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/contact" className="btn-ghost btn-lg">Schedule a Call</Link>
           </div>
         </div>
       </section>

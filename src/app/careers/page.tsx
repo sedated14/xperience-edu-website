@@ -131,7 +131,7 @@ export default function CareersPage() {
                       <span className="px-3 py-1 bg-neutral-200 text-neutral-600 rounded-full text-xs font-medium">{pos.location}</span>
                     </div>
                   </div>
-                  <Link href="/about/contact" className="btn-secondary text-sm">Apply <ArrowRight className="w-4 h-4" /></Link>
+                  <Link href="/contact" className="btn-secondary text-sm">Apply <ArrowRight className="w-4 h-4" /></Link>
                 </div>
                 <p className="text-neutral-600">{pos.description}</p>
                 <div className="mt-4 grid sm:grid-cols-2 gap-2">
@@ -151,7 +151,7 @@ export default function CareersPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Ready to Make a Difference?</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Send us your resume and tell us why you&apos;re passionate about international education.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
           </div>
         </div>
       </section>

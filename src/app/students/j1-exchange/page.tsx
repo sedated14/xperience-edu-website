@@ -41,7 +41,7 @@ export default function J1ExchangePage() {
                 Live with an American host family, attend a public high school, and immerse yourself in US culture for a semester or full year.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Link href="/about/contact" className="btn bg-emerald-600 text-white hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/student-assessment#form" className="btn bg-emerald-600 text-white hover:bg-emerald-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#comparison" className="btn-ghost btn-lg">J1 vs F1 Comparison</Link>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function J1ExchangePage() {
           </div>
           <div className="text-center mt-8">
             <p className="text-neutral-600 mb-4">Not sure which is right for you?</p>
-            <Link href="/about/contact" className="btn-secondary">Talk to an Advisor <ArrowRight className="w-4 h-4" /></Link>
+            <Link href="/contact" className="btn-secondary">Talk to an Advisor <ArrowRight className="w-4 h-4" /></Link>
           </div>
         </div>
       </section>
@@ -198,7 +198,7 @@ export default function J1ExchangePage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Ready for the Exchange of a Lifetime?</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Applications are open for the next academic year. Spots fill quickly — start your journey today.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/student-assessment#form" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
             <Link href="/students" className="btn-ghost btn-lg">View All Programs</Link>
           </div>
         </div>

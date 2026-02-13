@@ -93,7 +93,7 @@ export default function CanadaPage() {
                 Discover world-class education in one of the safest, most welcoming countries on earth. High school programs, short-term experiences, and summer camps across all Canadian provinces.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Link href="/about/contact" className="btn bg-red-600 text-white hover:bg-red-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/student-assessment" className="btn bg-red-600 text-white hover:bg-red-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#programs" className="btn-ghost btn-lg">View Programs</Link>
               </div>
             </div>
@@ -258,7 +258,7 @@ export default function CanadaPage() {
                   </li>
                 ))}
               </ul>
-              <Link href="/about/contact" className="btn bg-red-600 text-white hover:bg-red-700 btn-lg group">
+              <Link href="/student-assessment" className="btn bg-red-600 text-white hover:bg-red-700 btn-lg group">
                 Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -283,7 +283,7 @@ export default function CanadaPage() {
             Contact us today to learn more about our Canadian programs and find the perfect fit for your educational goals.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/about/contact" className="btn bg-white text-red-700 hover:bg-red-50 btn-lg group">
+            <Link href="/student-assessment" className="btn bg-white text-red-700 hover:bg-red-50 btn-lg group">
               Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

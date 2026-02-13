@@ -25,7 +25,7 @@ export default function SchoolsPage() {
                 Partner with us to welcome international students to your campus. Boost enrollment, increase revenue, and create a globally diverse learning environment.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
-                <Link href="/about/contact" className="btn-secondary btn-lg group">Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/contact" className="btn-secondary btn-lg group">Become a Partner <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#benefits" className="btn-ghost btn-lg">Learn More</Link>
               </div>
             </div>
@@ -124,8 +124,8 @@ export default function SchoolsPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Partner With Us Today</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Join our growing network of partner schools across America. We connect quality international students with schools that offer exceptional educational experiences.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Get Started <ArrowRight className="w-5 h-5" /></Link>
-            <Link href="/about/contact" className="btn-ghost btn-lg">Schedule a Call</Link>
+            <Link href="/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Get Started <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/contact" className="btn-ghost btn-lg">Schedule a Call</Link>
           </div>
         </div>
       </section>

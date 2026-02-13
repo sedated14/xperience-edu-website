@@ -25,7 +25,7 @@ export default function HostFamiliesPage() {
                 Host an international student and experience the world from your living room. Build cross-cultural connections that last a lifetime.
               </p>
               <div className="flex flex-wrap gap-4 mt-8">
-                <Link href="/about/contact" className="btn bg-accent-600 text-white hover:bg-accent-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply to Host <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/contact" className="btn bg-accent-600 text-white hover:bg-accent-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Apply to Host <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#benefits" className="btn-ghost btn-lg">Learn More</Link>
               </div>
             </div>
@@ -149,8 +149,8 @@ export default function HostFamiliesPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Ready to Welcome a Student?</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">The application takes about 15 minutes. Our team will guide you through every step.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply to Host <ArrowRight className="w-5 h-5" /></Link>
-            <Link href="/about/contact" className="btn-ghost btn-lg">Ask a Question</Link>
+            <Link href="/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply to Host <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/contact" className="btn-ghost btn-lg">Ask a Question</Link>
           </div>
         </div>
       </section>

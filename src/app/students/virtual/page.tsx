@@ -30,7 +30,7 @@ export default function VirtualHighSchoolPage() {
                 A flexible, affordable, and accessible way for international students to achieve a U.S. high school diploma online — study anytime, anywhere, at your own pace.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Link href="/about/contact" className="btn bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/student-assessment" className="btn bg-indigo-600 text-white hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-0.5 btn-lg group">Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#benefits" className="btn-ghost btn-lg">Learn More</Link>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function VirtualHighSchoolPage() {
             Contact us today for program details and to receive our Virtual High School Program brochure.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link href="/about/contact" className="btn bg-white text-indigo-700 hover:bg-indigo-50 btn-lg group">
+            <Link href="/student-assessment" className="btn bg-white text-indigo-700 hover:bg-indigo-50 btn-lg group">
               Get Started <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>

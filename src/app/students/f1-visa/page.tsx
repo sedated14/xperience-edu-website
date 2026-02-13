@@ -48,7 +48,7 @@ export default function F1VisaPage() {
                 Attend an American Private, Public, or Boarding School. Build your path to US universities with a world-class education and full academic support.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-8">
-                <Link href="/about/contact" className="btn-secondary btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
+                <Link href="/student-assessment#form" className="btn-secondary btn-lg group">Apply Now <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" /></Link>
                 <Link href="#faqs" className="btn-ghost btn-lg">View FAQs</Link>
               </div>
             </div>
@@ -203,8 +203,8 @@ export default function F1VisaPage() {
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-display max-w-3xl mx-auto">Start Your F1 Visa Application</h2>
           <p className="text-lg text-white/80 mt-4 max-w-2xl mx-auto">Take the first step toward earning your US diploma. Our experienced team is here to guide you through every step of the process.</p>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <Link href="/about/contact" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
-            <Link href="/about/contact" className="btn-ghost btn-lg">Talk to an Advisor</Link>
+            <Link href="/student-assessment#form" className="btn bg-white text-primary-900 hover:bg-neutral-100 btn-lg">Apply Now <ArrowRight className="w-5 h-5" /></Link>
+            <Link href="/contact" className="btn-ghost btn-lg">Talk to an Advisor</Link>
           </div>
         </div>
       </section>
