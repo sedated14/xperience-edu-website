@@ -134,6 +134,7 @@ export default function StudentAssessmentPage() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify({
           formType: 'Student Assessment Profile',
