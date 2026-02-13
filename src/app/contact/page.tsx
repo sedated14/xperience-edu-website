@@ -68,6 +68,8 @@ export default function ContactPage() {
       if (response.ok) {
         setIsSubmitted(true)
         setFormData({ name: '', email: '', phone: '', type: '', message: '' })
+        // Scroll to top of form to show thank you message
+        document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })
       } else {
         setError('Something went wrong. Please try again.')
       }

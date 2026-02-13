@@ -46,10 +46,10 @@ const durationOptions = [
 
 // Start date options
 const startDateOptions = [
-  'August/September 2025',
-  'January/February 2026',
   'August/September 2026',
   'January/February 2027',
+  'August/September 2027',
+  'January/February 2028',
   'Flexible'
 ]
 
@@ -154,6 +154,8 @@ export default function StudentAssessmentPage() {
           interestedPrograms: [], programDuration: [], requestedGrade: '',
           seekingGraduation: '', desiredStartDate: '', preferredComm: '',
         })
+        // Scroll to top of form to show thank you message
+        document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })
       } else {
         setError('Something went wrong. Please try again or email us directly.')
       }
