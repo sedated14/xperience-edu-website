@@ -50,18 +50,23 @@ export default function ContactPage() {
           type: formData.type,
           message: formData.message,
           _replyto: formData.email,
+          _subject: 'New Contact Form Submission - XperienceEdu',
+          _gotcha: '', // Honeypot field - must be empty
         }),
       })
 
+      const data = await response.json()
+      
       if (response.ok) {
         setIsSubmitted(true)
         setFormData({ name: '', email: '', phone: '', type: '', message: '' })
-        // Scroll to top of form to show thank you message
         document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })
       } else {
-        setError('Something went wrong. Please try again.')
+        console.error('Formspree error:', data)
+        setError(data.error || 'Something went wrong. Please try again.')
       }
-    } catch {
+    } catch (err) {
+      console.error('Form submission error:', err)
       setError('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)

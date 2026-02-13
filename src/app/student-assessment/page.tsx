@@ -123,8 +123,12 @@ export default function StudentAssessmentPage() {
           interestedPrograms: formData.interestedPrograms.join(', '),
           programDuration: formData.programDuration.join(', '),
           _replyto: formData.email,
+          _subject: 'New Student Assessment - XperienceEdu',
+          _gotcha: '', // Honeypot field - must be empty
         }),
       })
+
+      const data = await response.json()
 
       if (response.ok) {
         setIsSubmitted(true)
@@ -135,12 +139,13 @@ export default function StudentAssessmentPage() {
           interestedPrograms: [], programDuration: [], requestedGrade: '',
           seekingGraduation: '', desiredStartDate: '', preferredComm: '',
         })
-        // Scroll to top of form to show thank you message
         document.getElementById('form')?.scrollIntoView({ behavior: 'smooth' })
       } else {
-        setError('Something went wrong. Please try again or email us directly.')
+        console.error('Formspree error:', data)
+        setError(data.error || 'Something went wrong. Please try again or email us directly.')
       }
-    } catch {
+    } catch (err) {
+      console.error('Form submission error:', err)
       setError('Something went wrong. Please try again or email us directly.')
     } finally {
       setIsSubmitting(false)
