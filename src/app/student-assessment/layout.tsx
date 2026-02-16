@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Student Assessment | Xperience Education',
     description: 'Start your application to study in the USA or Canada. Complete your profile and get matched with the perfect program.',
-    url: 'https://xperienceedu.com/student-assessment',
+    url: 'https://www.xperienceedu.com/student-assessment',
   },
   alternates: {
-    canonical: 'https://xperienceedu.com/student-assessment',
+    canonical: 'https://www.xperienceedu.com/student-assessment',
   },
 }
 

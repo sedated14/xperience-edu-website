@@ -14,10 +14,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us | Xperience Education',
     description: 'Have questions about studying in the USA or Canada? Contact our team for a free consultation.',
-    url: 'https://xperienceedu.com/contact',
+    url: 'https://www.xperienceedu.com/contact',
   },
   alternates: {
-    canonical: 'https://xperienceedu.com/contact',
+    canonical: 'https://www.xperienceedu.com/contact',
   },
 }
 

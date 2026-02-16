@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/_next/', '/admin/'],
       },
     ],
-    sitemap: 'https://xperienceedu.com/sitemap.xml',
+    sitemap: 'https://www.xperienceedu.com/sitemap.xml',
   }
 }

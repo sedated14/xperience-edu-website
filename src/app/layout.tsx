@@ -17,7 +17,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://xperienceedu.com'),
+  metadataBase: new URL('https://www.xperienceedu.com'),
   title: {
     default: 'Xperience Education | Study in USA & Canada | F1 Visa & J1 Exchange Programs for International Students',
     template: '%s | Xperience Education',
@@ -107,25 +107,25 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: 'https://xperienceedu.com',
+    canonical: 'https://www.xperienceedu.com',
     languages: {
-      'en-US': 'https://xperienceedu.com',
-      'zh-CN': 'https://xperienceedu.com',
-      'es': 'https://xperienceedu.com',
-      'de': 'https://xperienceedu.com',
-      'pt-BR': 'https://xperienceedu.com',
-      'ko': 'https://xperienceedu.com',
-      'ja': 'https://xperienceedu.com',
-      'vi': 'https://xperienceedu.com',
-      'th': 'https://xperienceedu.com',
-      'fr': 'https://xperienceedu.com',
-      'it': 'https://xperienceedu.com',
+      'en-US': 'https://www.xperienceedu.com',
+      'zh-CN': 'https://www.xperienceedu.com',
+      'es': 'https://www.xperienceedu.com',
+      'de': 'https://www.xperienceedu.com',
+      'pt-BR': 'https://www.xperienceedu.com',
+      'ko': 'https://www.xperienceedu.com',
+      'ja': 'https://www.xperienceedu.com',
+      'vi': 'https://www.xperienceedu.com',
+      'th': 'https://www.xperienceedu.com',
+      'fr': 'https://www.xperienceedu.com',
+      'it': 'https://www.xperienceedu.com',
     },
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://xperienceedu.com',
+    url: 'https://www.xperienceedu.com',
     siteName: 'Xperience Education',
     title: 'Xperience Education | Study in USA & Canada | International Student Programs',
     description:
@@ -174,8 +174,8 @@ export default function RootLayout({
     '@type': 'EducationalOrganization',
     name: 'Xperience Education',
     alternateName: 'XperienceEdu',
-    url: 'https://xperienceedu.com',
-    logo: 'https://xperienceedu.com/images/logo.png',
+    url: 'https://www.xperienceedu.com',
+    logo: 'https://www.xperienceedu.com/images/logo.png',
     description: 'International student exchange and high school programs in the USA and Canada. F1 Visa, J1 Exchange, Virtual High School, and Summer Programs.',
     sameAs: [
       'https://www.instagram.com/xperience_education/',
@@ -194,7 +194,7 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Xperience Education',
-    url: 'https://xperienceedu.com',
+    url: 'https://www.xperienceedu.com',
   }
 
   return (
